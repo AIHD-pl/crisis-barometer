@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Barometr Ryzyka Finansowego</title>
+  <link rel="manifest" href="manifest.json" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, system-ui, sans-serif; background:#0f172a; color:#e2e8f0; margin:0; min-height:100dvh; }
+    .card { background:#1e293b; border:1px solid #334155; border-radius:16px; }
+    .good { background:linear-gradient(135deg,#064e3b,#065f46); border-color:#10b981; }
+    .warn { background:linear-gradient(135deg,#713f12,#854d0e); border-color:#eab308; }
+    .high { background:linear-gradient(135deg,#9a3412,#c2410c); border-color:#fb923c; }
+    .crit { background:linear-gradient(135deg,#7f1d1d,#991b1b); border-color:#ef4444; }
+    .bar-bg { background:#334155; border-radius:999px; height:12px; overflow:hidden; }
+    .bar-fill { height:100%; border-radius:999px; transition:width .4s; }
+  </style>
+</head>
+<body class="p-4 max-w-3xl mx-auto pb-10">
+  <header class="mb-5 flex items-start justify-between gap-3">
+    <div>
+      <h1 class="text-2xl font-extrabold">🌡️ Barometr Ryzyka</h1>
+      <p class="text-slate-400 text-sm">Wczesne sygnały napięcia w systemie finansowym</p>
+      <p id="updated" class="text-xs text-slate-500 mt-1">Ładowanie...</p>
+    </div>
+    <button onclick="loadData()" class="w-11 h-11 rounded-full bg-slate-700 text-lg">🔄</button>
+  </header>
+
+  <section id="mainCard" class="card border-2 p-5 mb-5 text-center">
+    <div class="text-xs uppercase tracking-widest text-slate-400 mb-1">Poziom ryzyka</div>
+    <div id="levelLabel" class="text-3xl font-extrabold mb-2">—</div>
+    <div id="scoreNum" class="text-5xl font-black mb-3">—</div>
+    <div class="bar-bg mx-auto max-w-sm mb-3"><div id="scoreBar" class="bar-fill bg-sky-400" style="width:0%"></div></div>
+    <p id="desc" class="text-slate-300 text-sm leading-relaxed">Pobieram dane...</p>
+  </section>
+
+  <section class="card p-4 mb-5">
+    <h2 class="font-bold mb-3">Dlaczego taka ocena?</h2>
+    <ul id="reasons" class="space-y-2 text-sm text-slate-300"></ul>
+  </section>
+
+  <section class="card p-4 mb-5">
+    <h2 class="font-bold mb-3">Składowe barometru</h2>
+    <div id="components" class="space-y-3"></div>
+  </section>
+
+  <section class="card p-4 mb-5">
+    <h2 class="font-bold mb-3">Rynki</h2>
+    <div id="markets" class="space-y-2 text-sm"></div>
+  </section>
+
+  <section class="card p-4 mb-5">
+    <h2 class="font-bold mb-3">Makro (FRED)</h2>
+    <div id="fred" class="space-y-2 text-sm"></div>
+  </section>
+
+  <section class="card p-4 mb-5">
+    <h2 class="font-bold mb-3">Newsy / SEC</h2>
+    <div id="newsSec" class="space-y-2 text-sm text-slate-300"></div>
+  </section>
+
+  <section class="card p-4 text-xs text-slate-500 leading-relaxed">
+    To nie jest porada inwestycyjna ani prognoza daty kryzysu. Barometr składa publiczne wskaźniki w prostą ocenę napięcia.
+    Dane odświeżają się automatycznie co ok. 6 godzin przez GitHub Actions.
+  </section>
+
+<script>
+async function loadData(){
+  document.getElementById('updated').textContent = 'Odświeżam...';
+  try{
+    const r = await fetch('monitor_data/latest_report.json?t='+Date.now());
+    if(!r.ok) throw new Error('brak raportu');
+    const data = await r.json();
+    render(data);
+  }catch(e){
+    document.getElementById('levelLabel').textContent = 'Brak danych';
+    document.getElementById('desc').textContent = 'Uruchom workflow na GitHubie albo poczekaj na automatyczną aktualizację.';
+    document.getElementById('updated').textContent = 'Brak raportu';
+  }
+}
+
+function render(data){
+  const b = data.barometer || {};
+  const score = b.score ?? 0;
+  document.getElementById('updated').textContent = 'Aktualizacja: ' + new Date(data.timestamp).toLocaleString('pl-PL');
+  document.getElementById('levelLabel').textContent = b.level_label || '—';
+  document.getElementById('scoreNum').textContent = score;
+  document.getElementById('scoreBar').style.width = Math.min(100, score) + '%';
+  document.getElementById('desc').textContent = b.description || '';
+
+  const card = document.getElementById('mainCard');
+  card.classList.remove('good','warn','high','crit');
+  if(score < 25) card.classList.add('good');
+  else if(score < 45) card.classList.add('warn');
+  else if(score < 70) card.classList.add('high');
+  else card.classList.add('crit');
+
+  document.getElementById('reasons').innerHTML = (b.reasons||[]).map(x=>`<li>• ${x}</li>`).join('') || '<li>Brak szczegółów</li>';
+
+  document.getElementById('components').innerHTML = (b.components||[]).map(c=>{
+    const w = Math.min(100, c.score);
+    return `<div>
+      <div class="flex justify-between text-sm mb-1"><span>${c.name}</span><span class="font-semibold">${c.score}</span></div>
+      <div class="bar-bg"><div class="bar-fill bg-sky-500/80" style="width:${w}%"></div></div>
+    </div>`;
+  }).join('');
+
+  const mk = data.markets || {};
+  document.getElementById('markets').innerHTML = Object.entries(mk).map(([k,v])=>{
+    const c = (v.change_1d_pct||0) >= 0 ? 'text-emerald-400' : 'text-red-400';
+    return `<div class="flex justify-between border-b border-slate-700/50 py-2">
+      <span>${v.label||k}</span>
+      <span class="${c}">${v.price} (${v.change_1d_pct>0?'+':''}${v.change_1d_pct}%)</span>
+    </div>`;
+  }).join('') || '<div class="text-slate-500">Brak danych rynkowych</div>';
+
+  const fr = data.fred || {};
+  document.getElementById('fred').innerHTML = Object.values(fr).filter(x=>x.value!=null).map(x=>{
+    return `<div class="flex justify-between border-b border-slate-700/50 py-2">
+      <span>${x.label}</span>
+      <span class="font-mono">${Number(x.value).toFixed(2)}</span>
+    </div>`;
+  }).join('') || '<div class="text-slate-500">Brak danych FRED (sprawdź klucz API)</div>';
+
+  const news = data.news || {};
+  const sec = data.sec || {};
+  let html = '';
+  if(news.hit_count) html += `<div class="mb-2 font-medium text-amber-300">Newsy stresowe: ${news.hit_count}</div>` +
+    (news.hits||[]).slice(0,5).map(h=>`<div class="text-xs mb-1">• ${h.title}</div>`).join('');
+  if(sec.hit_count|| (sec.hits||[]).length) html += `<div class="mt-3 mb-2 font-medium text-purple-300">SEC 8-K: ${sec.hit_count||sec.hits.length}</div>` +
+    (sec.hits||[]).slice(0,5).map(h=>`<div class="text-xs mb-1">• ${h.title}</div>`).join('');
+  if(!html) html = '<div class="text-slate-500">Brak silnych trafień w newsach/SEC</div>';
+  document.getElementById('newsSec').innerHTML = html;
+}
+
+loadData();
+setInterval(loadData, 5*60*1000);
+</script>
+</body>
+</html>

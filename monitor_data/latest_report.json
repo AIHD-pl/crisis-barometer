@@ -1,0 +1,16 @@
+{
+  "timestamp": "2026-09-02T12:00:00Z",
+  "barometer": {
+    "score": 0,
+    "level": "spokojnie",
+    "level_label": "🟢 Oczekiwanie na dane",
+    "description": "Uruchom workflow na GitHubie, żeby pobrać pierwsze odczyty.",
+    "components": [],
+    "reasons": ["Brak jeszcze automatycznej aktualizacji"]
+  },
+  "fred": {},
+  "markets": {},
+  "news": {"hits": [], "hit_count": 0},
+  "sec": {"hits": [], "hit_count": 0},
+  "meta": {"fred_key_present": false, "version": "1.0"}
+}
