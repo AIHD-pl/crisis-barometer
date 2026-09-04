@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-04T17:13:19.966149Z",
+  "timestamp": "2026-09-04T19:59:28.996624Z",
   "barometer": {
     "score": 9.6,
     "level": "spokojnie",
@@ -227,63 +227,63 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7719.96,
-      "change_1d_pct": -0.36,
-      "change_5d_pct": 0.11
+      "price": 7716.83,
+      "change_1d_pct": -0.4,
+      "change_5d_pct": 0.07
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 53419.69,
-      "change_1d_pct": -0.5,
-      "change_5d_pct": -0.26
+      "price": 53390.86,
+      "change_1d_pct": -0.55,
+      "change_5d_pct": -0.32
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 26494.98,
-      "change_1d_pct": -0.34,
-      "change_5d_pct": 0.35
+      "price": 26502.46,
+      "change_1d_pct": -0.31,
+      "change_5d_pct": 0.38
     },
     "^VIX": {
       "label": "VIX",
-      "price": 14.07,
-      "change_1d_pct": -1.75,
-      "change_5d_pct": -2.49
+      "price": 14.27,
+      "change_1d_pct": -0.35,
+      "change_5d_pct": -1.11
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 79.21,
-      "change_1d_pct": -0.01,
-      "change_5d_pct": -0.13
+      "price": 79.17,
+      "change_1d_pct": -0.06,
+      "change_5d_pct": -0.18
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 105.64,
-      "change_1d_pct": 0.13,
-      "change_5d_pct": -0.26
+      "price": 105.48,
+      "change_1d_pct": -0.02,
+      "change_5d_pct": -0.4
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 82.38,
-      "change_1d_pct": 0.37,
-      "change_5d_pct": -0.23
+      "price": 82.19,
+      "change_1d_pct": 0.15,
+      "change_5d_pct": -0.45
     },
     "GLD": {
       "label": "Złoto",
-      "price": 406.6,
-      "change_1d_pct": -0.88,
-      "change_5d_pct": -0.56
+      "price": 406.7,
+      "change_1d_pct": -0.86,
+      "change_5d_pct": -0.54
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 28.05,
-      "change_1d_pct": 0.14,
-      "change_5d_pct": -0.46
+      "price": 28.06,
+      "change_1d_pct": 0.18,
+      "change_5d_pct": -0.43
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 58.21,
-      "change_1d_pct": -0.61,
-      "change_5d_pct": 0.18
+      "price": 58.08,
+      "change_1d_pct": -0.82,
+      "change_5d_pct": -0.03
     }
   },
   "news": {
@@ -293,7 +293,7 @@
   },
   "sec": {
     "hits": [],
-    "hit_count": 0
+    "error": "HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=25)"
   },
   "meta": {
     "fred_key_present": true,
