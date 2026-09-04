@@ -1,16 +1,302 @@
 {
-  "timestamp": "2026-09-02T12:00:00Z",
+  "timestamp": "2026-09-04T08:29:33.344679Z",
   "barometer": {
-    "score": 0,
+    "score": 12.6,
     "level": "spokojnie",
-    "level_label": "🟢 Oczekiwanie na dane",
-    "description": "Uruchom workflow na GitHubie, żeby pobrać pierwsze odczyty.",
-    "components": [],
-    "reasons": ["Brak jeszcze automatycznej aktualizacji"]
+    "level_label": "🟢 Spokojnie",
+    "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
+    "components": [
+      {
+        "name": "VIX / strach",
+        "score": 20,
+        "weight": 0.2
+      },
+      {
+        "name": "Krzywa rentowności",
+        "score": 25,
+        "weight": 0.18
+      },
+      {
+        "name": "Spready kredytowe HY",
+        "score": 15,
+        "weight": 0.18
+      },
+      {
+        "name": "Warunki finansowe (NFCI)",
+        "score": 10,
+        "weight": 0.14
+      },
+      {
+        "name": "Rynki akcji / sektory",
+        "score": 0,
+        "weight": 0.15
+      },
+      {
+        "name": "Newsy / nagłówki",
+        "score": 0,
+        "weight": 0.08
+      },
+      {
+        "name": "Sygnały SEC (8-K)",
+        "score": 0,
+        "weight": 0.07
+      }
+    ],
+    "reasons": [
+      "VIX 15.2 – normalnie",
+      "Krzywa +0.43 – płaska",
+      "HY spread 2.66% – spokojny kredyt",
+      "NFCI -0.56 – luźne warunki",
+      "Brak alarmujących nagłówków",
+      "Brak stresujących 8-K w próbce"
+    ]
   },
-  "fred": {},
-  "markets": {},
-  "news": {"hits": [], "hit_count": 0},
-  "sec": {"hits": [], "hit_count": 0},
-  "meta": {"fred_key_present": false, "version": "1.0"}
+  "fred": {
+    "VIXCLS": {
+      "id": "VIXCLS",
+      "label": "VIX (strach na giełdzie)",
+      "value": 15.2,
+      "date": "2026-09-02",
+      "change_pct": -6.98,
+      "history": [
+        16.01,
+        15.13,
+        15.85,
+        15.45,
+        15.21,
+        14.51,
+        14.43,
+        14.92,
+        16.34,
+        15.2
+      ]
+    },
+    "T10Y2Y": {
+      "id": "T10Y2Y",
+      "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
+      "value": 0.43,
+      "date": "2026-09-03",
+      "change_pct": 7.5,
+      "history": [
+        0.5,
+        0.46,
+        0.47,
+        0.47,
+        0.47,
+        0.39,
+        0.41,
+        0.4,
+        0.4,
+        0.43
+      ]
+    },
+    "T10Y3M": {
+      "id": "T10Y3M",
+      "label": "Krzywa 10y-3m",
+      "value": 0.88,
+      "date": "2026-09-03",
+      "change_pct": 1.15,
+      "history": [
+        0.86,
+        0.83,
+        0.78,
+        0.81,
+        0.83,
+        0.83,
+        0.84,
+        0.87,
+        0.87,
+        0.88
+      ]
+    },
+    "BAMLH0A0HYM2": {
+      "id": "BAMLH0A0HYM2",
+      "label": "Spready high-yield (kredyt śmieciowy)",
+      "value": 2.66,
+      "date": "2026-09-02",
+      "change_pct": 0.38,
+      "history": [
+        2.75,
+        2.7,
+        2.69,
+        2.7,
+        2.67,
+        2.63,
+        2.6,
+        2.63,
+        2.65,
+        2.66
+      ]
+    },
+    "DFF": {
+      "id": "DFF",
+      "label": "Stopa Fed Funds",
+      "value": 3.63,
+      "date": "2026-09-02",
+      "change_pct": 0.0,
+      "history": [
+        3.63,
+        3.63,
+        3.63,
+        3.63,
+        3.63,
+        3.63,
+        3.63,
+        3.63,
+        3.63,
+        3.63
+      ]
+    },
+    "DTWEXBGS": {
+      "id": "DTWEXBGS",
+      "label": "Indeks dolara (DXY proxy)",
+      "value": 118.7479,
+      "date": "2026-08-28",
+      "change_pct": 0.33,
+      "history": [
+        118.814,
+        118.9831,
+        118.3328,
+        118.2548,
+        118.0628,
+        118.3195,
+        118.2283,
+        118.4461,
+        118.3583,
+        118.7479
+      ]
+    },
+    "NFCI": {
+      "id": "NFCI",
+      "label": "Chicago Fed National Financial Conditions",
+      "value": -0.558,
+      "date": "2026-08-28",
+      "change_pct": -0.36,
+      "history": [
+        -0.514,
+        -0.52,
+        -0.526,
+        -0.532,
+        -0.538,
+        -0.544,
+        -0.549,
+        -0.553,
+        -0.556,
+        -0.558
+      ]
+    },
+    "STLFSI4": {
+      "id": "STLFSI4",
+      "label": "St. Louis Fed Stress Index",
+      "value": -0.8526,
+      "date": "2026-08-28",
+      "change_pct": -5.25,
+      "history": [
+        -0.6427,
+        -0.7224,
+        -0.8812,
+        -0.6994,
+        -0.8245,
+        -0.5046,
+        -0.7696,
+        -0.8276,
+        -0.8101,
+        -0.8526
+      ]
+    },
+    "WALCL": {
+      "id": "WALCL",
+      "label": "Bilans Fed (płynność)",
+      "value": 6737204.0,
+      "date": "2026-09-02",
+      "change_pct": 0.09,
+      "history": [
+        6724564.0,
+        6735609.0,
+        6743028.0,
+        6747378.0,
+        6738190.0,
+        6748567.0,
+        6759955.0,
+        6745699.0,
+        6730912.0,
+        6737204.0
+      ]
+    }
+  },
+  "markets": {
+    "^GSPC": {
+      "label": "S&P 500",
+      "price": 7747.71,
+      "change_1d_pct": 1.06,
+      "change_5d_pct": 0.22
+    },
+    "^DJI": {
+      "label": "Dow Jones",
+      "price": 53686.11,
+      "change_1d_pct": 1.18,
+      "change_5d_pct": 0.22
+    },
+    "^IXIC": {
+      "label": "Nasdaq",
+      "price": 26584.06,
+      "change_1d_pct": 1.4,
+      "change_5d_pct": 0.16
+    },
+    "^VIX": {
+      "label": "VIX",
+      "price": 14.18,
+      "change_1d_pct": -0.98,
+      "change_5d_pct": -1.73
+    },
+    "HYG": {
+      "label": "ETF high-yield",
+      "price": 79.21,
+      "change_1d_pct": 0.13,
+      "change_5d_pct": -0.28
+    },
+    "LQD": {
+      "label": "ETF corporate IG",
+      "price": 105.5,
+      "change_1d_pct": 0.14,
+      "change_5d_pct": -0.74
+    },
+    "TLT": {
+      "label": "ETF długich obligacji",
+      "price": 82.07,
+      "change_1d_pct": 0.15,
+      "change_5d_pct": -0.9
+    },
+    "GLD": {
+      "label": "Złoto",
+      "price": 410.22,
+      "change_1d_pct": 1.85,
+      "change_5d_pct": -2.93
+    },
+    "UUP": {
+      "label": "Dolar ETF",
+      "price": 28.01,
+      "change_1d_pct": -0.57,
+      "change_5d_pct": -0.04
+    },
+    "XLF": {
+      "label": "Sektor finansowy",
+      "price": 58.56,
+      "change_1d_pct": 1.56,
+      "change_5d_pct": 1.17
+    }
+  },
+  "news": {
+    "hits": [],
+    "scanned_titles": 25,
+    "hit_count": 0
+  },
+  "sec": {
+    "hits": [],
+    "hit_count": 0
+  },
+  "meta": {
+    "fred_key_present": true,
+    "version": "1.0"
+  }
 }
