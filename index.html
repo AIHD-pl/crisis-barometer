@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
   <meta name="theme-color" content="#0f172a" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>Barometr Ryzyka Finansowego</title>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Barometr" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="description" content="Barometr ryzyka finansowego – wczesne sygnały napięcia w systemie" />
   <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon-192.png" />
+  <link rel="icon" type="image/png" href="icon-192.png" />
+  <title>Barometr Ryzyka</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Inter, system-ui, sans-serif; background:#0f172a; color:#e2e8f0; margin:0; min-height:100dvh; }
+    body { font-family: Inter, system-ui, sans-serif; background:#0f172a; color:#e2e8f0; margin:0; min-height:100dvh; padding-bottom: env(safe-area-inset-bottom); }
     .card { background:#1e293b; border:1px solid #334155; border-radius:16px; }
     .good { background:linear-gradient(135deg,#064e3b,#065f46); border-color:#10b981; }
     .warn { background:linear-gradient(135deg,#713f12,#854d0e); border-color:#eab308; }
@@ -18,16 +24,39 @@
     .crit { background:linear-gradient(135deg,#7f1d1d,#991b1b); border-color:#ef4444; }
     .bar-bg { background:#334155; border-radius:999px; height:12px; overflow:hidden; }
     .bar-fill { height:100%; border-radius:999px; transition:width .4s; }
+    .install-banner {
+      position: fixed; left: 12px; right: 12px; bottom: calc(12px + env(safe-area-inset-bottom));
+      background: #1e293b; border: 1px solid #38bdf8; border-radius: 16px;
+      padding: 14px 16px; z-index: 100; box-shadow: 0 10px 30px rgba(0,0,0,.45);
+    }
   </style>
 </head>
-<body class="p-4 max-w-3xl mx-auto pb-10">
-  <header class="mb-5 flex items-start justify-between gap-3">
+<body class="p-4 max-w-3xl mx-auto pb-28">
+
+  <!-- BANER INSTALACJI -->
+  <div id="installBanner" class="install-banner hidden">
+    <div class="flex items-start gap-3">
+      <div class="text-2xl">📲</div>
+      <div class="flex-1">
+        <div class="font-semibold text-sm">Zainstaluj na telefonie</div>
+        <div id="installHint" class="text-xs text-slate-400 mt-1 leading-relaxed">
+          Dodaj Barometr do ekranu głównego – będzie działał jak zwykła aplikacja.
+        </div>
+        <div class="flex gap-2 mt-3">
+          <button id="installBtn" onclick="installApp()" class="bg-sky-500 text-white text-sm font-medium px-4 py-2 rounded-lg">Zainstaluj</button>
+          <button onclick="hideInstall()" class="text-slate-400 text-sm px-3 py-2">Później</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="mb-5 flex items-start justify-between gap-3 pt-1">
     <div>
       <h1 class="text-2xl font-extrabold">🌡️ Barometr Ryzyka</h1>
-      <p class="text-slate-400 text-sm">Wczesne sygnały napięcia w systemie finansowym</p>
+      <p class="text-slate-400 text-sm">Wczesne sygnały napięcia finansowego</p>
       <p id="updated" class="text-xs text-slate-500 mt-1">Ładowanie...</p>
     </div>
-    <button onclick="loadData()" class="w-11 h-11 rounded-full bg-slate-700 text-lg">🔄</button>
+    <button onclick="loadData()" class="w-11 h-11 rounded-full bg-slate-700 text-lg active:scale-95 transition" aria-label="Odśwież">🔄</button>
   </header>
 
   <section id="mainCard" class="card border-2 p-5 mb-5 text-center">
@@ -63,82 +92,170 @@
     <div id="newsSec" class="space-y-2 text-sm text-slate-300"></div>
   </section>
 
-  <section class="card p-4 text-xs text-slate-500 leading-relaxed">
+  <!-- Instrukcja instalacji zawsze widoczna na dole -->
+  <section class="card p-4 mb-5">
+    <h2 class="font-bold mb-2">📲 Jak dodać na ekran telefonu</h2>
+    <div class="text-sm text-slate-300 space-y-3 leading-relaxed">
+      <div>
+        <div class="font-semibold text-sky-300">Android (Chrome)</div>
+        <div>Menu ⋮ → <b>Zainstaluj aplikację</b> / „Dodaj do ekranu głównego”.  
+        Albo kliknij baner <b>Zainstaluj</b>, jeśli się pojawi.</div>
+      </div>
+      <div>
+        <div class="font-semibold text-sky-300">iPhone (Safari)</div>
+        <div>Przycisk <b>Udostępnij</b> (kwadrat z strzałką) → <b>Dodaj do ekranu początkowego</b> → Dodaj.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="card p-4 text-xs text-slate-500 leading-relaxed mb-6">
     To nie jest porada inwestycyjna ani prognoza daty kryzysu. Barometr składa publiczne wskaźniki w prostą ocenę napięcia.
-    Dane odświeżają się automatycznie co ok. 6 godzin przez GitHub Actions.
+    Dane odświeżają się automatycznie co ok. 6 godzin.
   </section>
 
 <script>
-async function loadData(){
-  document.getElementById('updated').textContent = 'Odświeżam...';
-  try{
-    const r = await fetch('monitor_data/latest_report.json?t='+Date.now());
-    if(!r.ok) throw new Error('brak raportu');
-    const data = await r.json();
-    render(data);
-  }catch(e){
-    document.getElementById('levelLabel').textContent = 'Brak danych';
-    document.getElementById('desc').textContent = 'Uruchom workflow na GitHubie albo poczekaj na automatyczną aktualizację.';
-    document.getElementById('updated').textContent = 'Brak raportu';
+  let deferredPrompt = null;
+
+  // --- PWA: service worker ---
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js', { scope: './' }).catch(console.error);
   }
-}
 
-function render(data){
-  const b = data.barometer || {};
-  const score = b.score ?? 0;
-  document.getElementById('updated').textContent = 'Aktualizacja: ' + new Date(data.timestamp).toLocaleString('pl-PL');
-  document.getElementById('levelLabel').textContent = b.level_label || '—';
-  document.getElementById('scoreNum').textContent = score;
-  document.getElementById('scoreBar').style.width = Math.min(100, score) + '%';
-  document.getElementById('desc').textContent = b.description || '';
+  // --- PWA: install prompt (Android/Chrome) ---
+  window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    if (!localStorage.getItem('installDismissed')) {
+      showInstallBanner('android');
+    }
+  });
 
-  const card = document.getElementById('mainCard');
-  card.classList.remove('good','warn','high','crit');
-  if(score < 25) card.classList.add('good');
-  else if(score < 45) card.classList.add('warn');
-  else if(score < 70) card.classList.add('high');
-  else card.classList.add('crit');
+  window.addEventListener('appinstalled', () => {
+    hideInstall();
+    deferredPrompt = null;
+  });
 
-  document.getElementById('reasons').innerHTML = (b.reasons||[]).map(x=>`<li>• ${x}</li>`).join('') || '<li>Brak szczegółów</li>';
+  function isIos() {
+    return /iphone|ipad|ipod/i.test(navigator.userAgent);
+  }
+  function isInStandalone() {
+    return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+  }
 
-  document.getElementById('components').innerHTML = (b.components||[]).map(c=>{
-    const w = Math.min(100, c.score);
-    return `<div>
-      <div class="flex justify-between text-sm mb-1"><span>${c.name}</span><span class="font-semibold">${c.score}</span></div>
-      <div class="bar-bg"><div class="bar-fill bg-sky-500/80" style="width:${w}%"></div></div>
-    </div>`;
-  }).join('');
+  function showInstallBanner(mode) {
+    const banner = document.getElementById('installBanner');
+    const hint = document.getElementById('installHint');
+    const btn = document.getElementById('installBtn');
+    if (isInStandalone()) return;
 
-  const mk = data.markets || {};
-  document.getElementById('markets').innerHTML = Object.entries(mk).map(([k,v])=>{
-    const c = (v.change_1d_pct||0) >= 0 ? 'text-emerald-400' : 'text-red-400';
-    return `<div class="flex justify-between border-b border-slate-700/50 py-2">
-      <span>${v.label||k}</span>
-      <span class="${c}">${v.price} (${v.change_1d_pct>0?'+':''}${v.change_1d_pct}%)</span>
-    </div>`;
-  }).join('') || '<div class="text-slate-500">Brak danych rynkowych</div>';
+    if (mode === 'ios' || (isIos() && !deferredPrompt)) {
+      hint.innerHTML = 'Na iPhonie: kliknij <b>Udostępnij</b> (□↑) na dole Safari, potem <b>Dodaj do ekranu początkowego</b>.';
+      btn.classList.add('hidden');
+    } else {
+      hint.textContent = 'Dodaj Barometr do ekranu głównego – będzie działał jak zwykła aplikacja.';
+      btn.classList.remove('hidden');
+    }
+    banner.classList.remove('hidden');
+  }
 
-  const fr = data.fred || {};
-  document.getElementById('fred').innerHTML = Object.values(fr).filter(x=>x.value!=null).map(x=>{
-    return `<div class="flex justify-between border-b border-slate-700/50 py-2">
-      <span>${x.label}</span>
-      <span class="font-mono">${Number(x.value).toFixed(2)}</span>
-    </div>`;
-  }).join('') || '<div class="text-slate-500">Brak danych FRED (sprawdź klucz API)</div>';
+  function hideInstall() {
+    document.getElementById('installBanner').classList.add('hidden');
+    localStorage.setItem('installDismissed', '1');
+  }
 
-  const news = data.news || {};
-  const sec = data.sec || {};
-  let html = '';
-  if(news.hit_count) html += `<div class="mb-2 font-medium text-amber-300">Newsy stresowe: ${news.hit_count}</div>` +
-    (news.hits||[]).slice(0,5).map(h=>`<div class="text-xs mb-1">• ${h.title}</div>`).join('');
-  if(sec.hit_count|| (sec.hits||[]).length) html += `<div class="mt-3 mb-2 font-medium text-purple-300">SEC 8-K: ${sec.hit_count||sec.hits.length}</div>` +
-    (sec.hits||[]).slice(0,5).map(h=>`<div class="text-xs mb-1">• ${h.title}</div>`).join('');
-  if(!html) html = '<div class="text-slate-500">Brak silnych trafień w newsach/SEC</div>';
-  document.getElementById('newsSec').innerHTML = html;
-}
+  async function installApp() {
+    if (!deferredPrompt) {
+      if (isIos()) {
+        showInstallBanner('ios');
+        return;
+      }
+      alert('W Chrome: menu ⋮ → Zainstaluj aplikację');
+      return;
+    }
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    hideInstall();
+  }
 
-loadData();
-setInterval(loadData, 5*60*1000);
+  // Pokaż wskazówkę iOS po chwili, jeśli nie zainstalowane
+  setTimeout(() => {
+    if (isIos() && !isInStandalone() && !localStorage.getItem('installDismissed')) {
+      showInstallBanner('ios');
+    }
+  }, 1500);
+
+  // --- Dane ---
+  async function loadData(){
+    document.getElementById('updated').textContent = 'Odświeżam...';
+    try{
+      const r = await fetch('monitor_data/latest_report.json?t='+Date.now());
+      if(!r.ok) throw new Error('brak raportu');
+      const data = await r.json();
+      render(data);
+    }catch(e){
+      document.getElementById('levelLabel').textContent = 'Brak danych';
+      document.getElementById('desc').textContent = 'Uruchom workflow na GitHubie albo poczekaj na automatyczną aktualizację.';
+      document.getElementById('updated').textContent = 'Brak raportu';
+    }
+  }
+
+  function render(data){
+    const b = data.barometer || {};
+    const score = b.score ?? 0;
+    document.getElementById('updated').textContent = 'Aktualizacja: ' + new Date(data.timestamp).toLocaleString('pl-PL');
+    document.getElementById('levelLabel').textContent = b.level_label || '—';
+    document.getElementById('scoreNum').textContent = score;
+    document.getElementById('scoreBar').style.width = Math.min(100, score) + '%';
+    document.getElementById('desc').textContent = b.description || '';
+
+    const card = document.getElementById('mainCard');
+    card.classList.remove('good','warn','high','crit');
+    if(score < 25) card.classList.add('good');
+    else if(score < 45) card.classList.add('warn');
+    else if(score < 70) card.classList.add('high');
+    else card.classList.add('crit');
+
+    document.getElementById('reasons').innerHTML = (b.reasons||[]).map(x=>`<li>• ${x}</li>`).join('') || '<li>Brak szczegółów</li>';
+
+    document.getElementById('components').innerHTML = (b.components||[]).map(c=>{
+      const w = Math.min(100, c.score);
+      return `<div>
+        <div class="flex justify-between text-sm mb-1"><span>${c.name}</span><span class="font-semibold">${c.score}</span></div>
+        <div class="bar-bg"><div class="bar-fill bg-sky-500/80" style="width:${w}%"></div></div>
+      </div>`;
+    }).join('');
+
+    const mk = data.markets || {};
+    document.getElementById('markets').innerHTML = Object.entries(mk).map(([k,v])=>{
+      const c = (v.change_1d_pct||0) >= 0 ? 'text-emerald-400' : 'text-red-400';
+      return `<div class="flex justify-between border-b border-slate-700/50 py-2">
+        <span>${v.label||k}</span>
+        <span class="${c}">${v.price} (${v.change_1d_pct>0?'+':''}${v.change_1d_pct}%)</span>
+      </div>`;
+    }).join('') || '<div class="text-slate-500">Brak danych rynkowych</div>';
+
+    const fr = data.fred || {};
+    document.getElementById('fred').innerHTML = Object.values(fr).filter(x=>x.value!=null).map(x=>{
+      return `<div class="flex justify-between border-b border-slate-700/50 py-2">
+        <span>${x.label}</span>
+        <span class="font-mono">${Number(x.value).toFixed(2)}</span>
+      </div>`;
+    }).join('') || '<div class="text-slate-500">Brak danych FRED (sprawdź klucz API)</div>';
+
+    const news = data.news || {};
+    const sec = data.sec || {};
+    let html = '';
+    if(news.hit_count) html += `<div class="mb-2 font-medium text-amber-300">Newsy stresowe: ${news.hit_count}</div>` +
+      (news.hits||[]).slice(0,5).map(h=>`<div class="text-xs mb-1">• ${h.title}</div>`).join('');
+    if(sec.hit_count || (sec.hits||[]).length) html += `<div class="mt-3 mb-2 font-medium text-purple-300">SEC 8-K: ${sec.hit_count||sec.hits.length}</div>` +
+      (sec.hits||[]).slice(0,5).map(h=>`<div class="text-xs mb-1">• ${h.title}</div>`).join('');
+    if(!html) html = '<div class="text-slate-500">Brak silnych trafień w newsach/SEC</div>';
+    document.getElementById('newsSec').innerHTML = html;
+  }
+
+  loadData();
+  setInterval(loadData, 5*60*1000);
 </script>
 </body>
 </html>

@@ -1,46 +1,30 @@
 # 🌡️ Barometr Ryzyka Finansowego
 
-Automatyczny monitor napięcia w systemie finansowym.
-Co ~6 godzin zbiera wskaźniki makro (FRED), rynki, newsy i sygnały SEC,
-liczy wynik **0–100** i publikuje prosty dashboard.
+Automatyczny monitor napięcia w systemie finansowym + **aplikacja na telefon (PWA)**.
 
-To **nie** jest prognoza daty kryzysu ani porada inwestycyjna.
+## Instalacja na telefonie
 
-## Szybki start (GitHub)
+Po opublikowaniu na GitHub Pages otwórz stronę na telefonie:
 
-### 1. Nowe repozytorium
-Utwórz publiczne repo, np. `crisis-barometer`.
+### Android (Chrome)
+Menu ⋮ → **Zainstaluj aplikację** (lub baner „Zainstaluj”).
 
-### 2. Wgraj pliki
-Wgraj **zawartość** tego folderu do **głównego katalogu** repozytorium
-(index.html, crisis_monitor.py, .github, monitor_data, ...).
+### iPhone (Safari)
+**Udostępnij** (□↑) → **Dodaj do ekranu początkowego** → Dodaj.
 
-### 3. Dodaj sekret z kluczem FRED
-1. Repo → **Settings** → **Secrets and variables** → **Actions**
-2. **New repository secret**
-3. Name: `FRED_API_KEY`
-4. Value: wklej swój klucz z FRED
-5. Save
+Ikona „Barometr” pojawi się na pulpicie i otwiera się jak zwykła apka.
 
-### 4. Włącz GitHub Pages
-Settings → Pages → Source: branch `main`, folder `/ (root)` → Save
+## Deploy na GitHub
 
-Adres:
-`https://TWOJA_NAZWA.github.io/crisis-barometer/`
+1. Nowe publiczne repo, np. `crisis-barometer`
+2. Wgraj **zawartość** tego folderu do głównego katalogu (w tym `.github`)
+3. Secret: Settings → Secrets → Actions → `FRED_API_KEY`
+4. Pages: Settings → Pages → main / root
+5. Actions → **Aktualizuj Barometr Ryzyka** → Run workflow
 
-### 5. Pierwsze uruchomienie
-Actions → **Aktualizuj Barometr Ryzyka** → **Run workflow**
+Adres: `https://TWOJA_NAZWA.github.io/crisis-barometer/`
 
-Po zielonym statusie odśwież stronę.
+## Co mierzy
+VIX, krzywa rentowności, spready HY, NFCI, rynki, newsy, próbka SEC 8-K → wynik 0–100.
 
-## Co jest mierzone
-- VIX / strach
-- Krzywa rentowności (10y–2y)
-- Spready high-yield
-- Warunki finansowe NFCI
-- Ruch indeksów i sektora finansowego
-- Nagłówki o stresie
-- Próbka 8-K z SEC
-
-## Automatyzacja
-Workflow odpala się sam co 6 godzin + ręcznie przez Run workflow.
+To nie jest porada inwestycyjna.
