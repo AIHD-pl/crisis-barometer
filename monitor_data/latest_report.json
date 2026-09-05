@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-04T22:05:30.906795Z",
+  "timestamp": "2026-09-05T00:27:36.199117Z",
   "barometer": {
     "score": 9.6,
     "level": "spokojnie",
@@ -251,39 +251,39 @@
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 79.16,
-      "change_1d_pct": -0.06,
-      "change_5d_pct": -0.18
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 105.48,
-      "change_1d_pct": -0.02,
-      "change_5d_pct": -0.4
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 82.21,
-      "change_1d_pct": 0.17,
-      "change_5d_pct": -0.43
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "GLD": {
       "label": "Złoto",
-      "price": 406.77,
-      "change_1d_pct": -0.84,
-      "change_5d_pct": -0.52
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 28.08,
-      "change_1d_pct": 0.25,
-      "change_5d_pct": -0.35
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 58.1,
-      "change_1d_pct": -0.79,
-      "change_5d_pct": 0.0
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     }
   },
   "news": {
