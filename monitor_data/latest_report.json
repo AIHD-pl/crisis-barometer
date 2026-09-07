@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06T22:30:39.682506Z",
+  "timestamp": "2026-09-07T00:26:15.638183Z",
   "barometer": {
     "score": 9.6,
     "level": "spokojnie",
@@ -43,7 +43,7 @@
       }
     ],
     "reasons": [
-      "VIX 14.5 – spokój",
+      "VIX 14.3 – spokój",
       "Krzywa +0.41 – płaska",
       "HY spread 2.65% – spokojny kredyt",
       "NFCI -0.56 – luźne warunki",
@@ -55,9 +55,21 @@
     "VIXCLS": {
       "id": "VIXCLS",
       "label": "VIX (strach na giełdzie)",
-      "value": null,
-      "date": null,
-      "change_pct": null
+      "value": 14.32,
+      "date": "2026-09-03",
+      "change_pct": -5.79,
+      "history": [
+        15.13,
+        15.85,
+        15.45,
+        15.21,
+        14.51,
+        14.43,
+        14.92,
+        16.34,
+        15.2,
+        14.32
+      ]
     },
     "T10Y2Y": {
       "id": "T10Y2Y",
