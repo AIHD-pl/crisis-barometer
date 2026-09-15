@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-15T20:32:42.738668Z",
+  "timestamp": "2026-09-15T23:15:27.805072Z",
   "barometer": {
     "score": 12.6,
     "level": "spokojnie",
@@ -44,7 +44,7 @@
     ],
     "reasons": [
       "VIX 17.1 – normalnie",
-      "Krzywa +0.32 – płaska",
+      "Krzywa +0.33 – płaska",
       "HY spread 2.71% – spokojny kredyt",
       "NFCI -0.56 – luźne warunki",
       "Brak alarmujących nagłówków",
@@ -74,11 +74,10 @@
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.32,
-      "date": "2026-09-14",
-      "change_pct": -3.03,
+      "value": 0.33,
+      "date": "2026-09-15",
+      "change_pct": 3.13,
       "history": [
-        0.41,
         0.4,
         0.4,
         0.43,
@@ -87,17 +86,17 @@
         0.4,
         0.39,
         0.33,
-        0.32
+        0.32,
+        0.33
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.86,
-      "date": "2026-09-14",
-      "change_pct": -3.37,
+      "value": 0.89,
+      "date": "2026-09-15",
+      "change_pct": 3.49,
       "history": [
-        0.84,
         0.87,
         0.87,
         0.88,
@@ -106,7 +105,8 @@
         0.88,
         0.95,
         0.89,
-        0.86
+        0.86,
+        0.89
       ]
     },
     "BAMLH0A0HYM2": {
