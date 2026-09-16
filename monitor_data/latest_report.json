@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-16T07:19:12.602494Z",
+  "timestamp": "2026-09-16T12:54:22.015791Z",
   "barometer": {
     "score": 12.6,
     "level": "spokojnie",
@@ -169,20 +169,20 @@
     "NFCI": {
       "id": "NFCI",
       "label": "Chicago Fed National Financial Conditions",
-      "value": -0.564,
-      "date": "2026-09-04",
-      "change_pct": -0.71,
+      "value": -0.56,
+      "date": "2026-09-11",
+      "change_pct": -0.36,
       "history": [
-        -0.52,
-        -0.526,
-        -0.53,
-        -0.536,
-        -0.541,
-        -0.546,
+        -0.522,
+        -0.527,
+        -0.533,
+        -0.537,
+        -0.542,
+        -0.547,
         -0.551,
         -0.555,
-        -0.56,
-        -0.564
+        -0.558,
+        -0.56
       ]
     },
     "STLFSI4": {
@@ -245,9 +245,9 @@
     },
     "^VIX": {
       "label": "VIX",
-      "price": 17.2,
-      "change_1d_pct": 0.58,
-      "change_5d_pct": 9.41
+      "price": 16.89,
+      "change_1d_pct": -1.8,
+      "change_5d_pct": 2.61
     },
     "HYG": {
       "label": "ETF high-yield",
