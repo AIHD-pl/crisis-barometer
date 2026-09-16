@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-16T20:32:55.174306Z",
+  "timestamp": "2026-09-16T23:21:43.628113Z",
   "barometer": {
-    "score": 12.6,
+    "score": 11.2,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -23,7 +23,7 @@
       },
       {
         "name": "Warunki finansowe (NFCI)",
-        "score": 10,
+        "score": 0.0,
         "weight": 0.14
       },
       {
@@ -44,9 +44,9 @@
     ],
     "reasons": [
       "VIX 17.2 – normalnie",
-      "Krzywa +0.33 – płaska",
+      "Krzywa +0.27 – płaska",
       "HY spread 2.76% – spokojny kredyt",
-      "NFCI -0.56 – luźne warunki",
+      "Brak NFCI",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
@@ -74,11 +74,10 @@
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.33,
-      "date": "2026-09-15",
-      "change_pct": 3.13,
+      "value": 0.27,
+      "date": "2026-09-16",
+      "change_pct": -18.18,
       "history": [
-        0.4,
         0.4,
         0.43,
         0.41,
@@ -87,17 +86,17 @@
         0.39,
         0.33,
         0.32,
-        0.33
+        0.33,
+        0.27
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.89,
-      "date": "2026-09-15",
-      "change_pct": 3.49,
+      "value": 0.87,
+      "date": "2026-09-16",
+      "change_pct": -2.25,
       "history": [
-        0.87,
         0.87,
         0.88,
         0.87,
@@ -106,7 +105,8 @@
         0.95,
         0.89,
         0.86,
-        0.89
+        0.89,
+        0.87
       ]
     },
     "BAMLH0A0HYM2": {
@@ -169,39 +169,27 @@
     "NFCI": {
       "id": "NFCI",
       "label": "Chicago Fed National Financial Conditions",
-      "value": -0.56,
-      "date": "2026-09-11",
-      "change_pct": -0.36,
-      "history": [
-        -0.522,
-        -0.527,
-        -0.533,
-        -0.537,
-        -0.542,
-        -0.547,
-        -0.551,
-        -0.555,
-        -0.558,
-        -0.56
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "STLFSI4": {
       "id": "STLFSI4",
       "label": "St. Louis Fed Stress Index",
-      "value": -0.7884,
-      "date": "2026-09-04",
-      "change_pct": 7.44,
+      "value": -0.8477,
+      "date": "2026-09-11",
+      "change_pct": -7.4,
       "history": [
-        -0.7223,
-        -0.8819,
-        -0.6994,
-        -0.8252,
-        -0.5045,
-        -0.769,
-        -0.8275,
-        -0.81,
-        -0.8518,
-        -0.7884
+        -0.8825,
+        -0.6993,
+        -0.826,
+        -0.5042,
+        -0.7683,
+        -0.8273,
+        -0.8097,
+        -0.8509,
+        -0.7893,
+        -0.8477
       ]
     },
     "WALCL": {
@@ -288,12 +276,12 @@
   },
   "news": {
     "hits": [],
-    "scanned_titles": 25,
+    "scanned_titles": 14,
     "hit_count": 0
   },
   "sec": {
     "hits": [],
-    "error": "HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=25)"
+    "hit_count": 0
   },
   "meta": {
     "fred_key_present": true,
