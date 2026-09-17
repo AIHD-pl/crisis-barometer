@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-17T02:04:25.168875Z",
+  "timestamp": "2026-09-17T08:03:52.739553Z",
   "barometer": {
     "score": 12.6,
     "level": "spokojnie",
@@ -76,8 +76,19 @@
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
       "value": 0.27,
       "date": "2026-09-16",
-      "change_pct": null,
-      "history": []
+      "change_pct": -18.18,
+      "history": [
+        0.4,
+        0.43,
+        0.41,
+        0.41,
+        0.4,
+        0.39,
+        0.33,
+        0.32,
+        0.33,
+        0.27
+      ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
@@ -228,15 +239,15 @@
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 25978.42,
+      "price": 25978.43,
       "change_1d_pct": -0.01,
       "change_5d_pct": -1.05
     },
     "^VIX": {
       "label": "VIX",
-      "price": 17.71,
-      "change_1d_pct": 2.97,
-      "change_5d_pct": 7.59
+      "price": 16.01,
+      "change_1d_pct": -9.6,
+      "change_5d_pct": -10.26
     },
     "HYG": {
       "label": "ETF high-yield",
