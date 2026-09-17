@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-16T23:21:43.628113Z",
+  "timestamp": "2026-09-17T02:04:25.168875Z",
   "barometer": {
-    "score": 11.2,
+    "score": 12.6,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -23,7 +23,7 @@
       },
       {
         "name": "Warunki finansowe (NFCI)",
-        "score": 0.0,
+        "score": 10,
         "weight": 0.14
       },
       {
@@ -46,7 +46,7 @@
       "VIX 17.2 – normalnie",
       "Krzywa +0.27 – płaska",
       "HY spread 2.76% – spokojny kredyt",
-      "Brak NFCI",
+      "NFCI -0.56 – luźne warunki",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
@@ -76,19 +76,8 @@
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
       "value": 0.27,
       "date": "2026-09-16",
-      "change_pct": -18.18,
-      "history": [
-        0.4,
-        0.43,
-        0.41,
-        0.41,
-        0.4,
-        0.39,
-        0.33,
-        0.32,
-        0.33,
-        0.27
-      ]
+      "change_pct": null,
+      "history": []
     },
     "T10Y3M": {
       "id": "T10Y3M",
@@ -169,9 +158,21 @@
     "NFCI": {
       "id": "NFCI",
       "label": "Chicago Fed National Financial Conditions",
-      "value": null,
-      "date": null,
-      "change_pct": null
+      "value": -0.56,
+      "date": "2026-09-11",
+      "change_pct": -0.36,
+      "history": [
+        -0.522,
+        -0.527,
+        -0.533,
+        -0.537,
+        -0.542,
+        -0.547,
+        -0.551,
+        -0.555,
+        -0.558,
+        -0.56
+      ]
     },
     "STLFSI4": {
       "id": "STLFSI4",
@@ -276,7 +277,7 @@
   },
   "news": {
     "hits": [],
-    "scanned_titles": 14,
+    "scanned_titles": 25,
     "hit_count": 0
   },
   "sec": {
