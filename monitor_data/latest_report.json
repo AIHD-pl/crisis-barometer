@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-18T15:32:56.287689Z",
+  "timestamp": "2026-09-18T18:42:32.607907Z",
   "barometer": {
-    "score": 12.6,
+    "score": 13.2,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -38,7 +38,7 @@
       },
       {
         "name": "Sygnały SEC (8-K)",
-        "score": 0,
+        "score": 8.0,
         "weight": 0.07
       }
     ],
@@ -48,7 +48,8 @@
       "HY spread 2.70% – spokojny kredyt",
       "NFCI -0.56 – luźne warunki",
       "Brak alarmujących nagłówków",
-      "Brak stresujących 8-K w próbce"
+      "SEC 8-K ze słowami stresu: 1",
+      "8-K: 8-K - BASIN ELECTRIC POWER COOPERATIVE (0000720515) (Filer)"
     ]
   },
   "fred": {
@@ -227,63 +228,63 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7626.49,
-      "change_1d_pct": -0.15,
-      "change_5d_pct": -0.4
+      "price": 7633.91,
+      "change_1d_pct": -0.05,
+      "change_5d_pct": -0.3
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51572.57,
-      "change_1d_pct": -0.4,
-      "change_5d_pct": -1.9
+      "price": 51661.43,
+      "change_1d_pct": -0.23,
+      "change_5d_pct": -1.73
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 26392.78,
-      "change_1d_pct": -0.1,
-      "change_5d_pct": 0.23
+      "price": 26427.51,
+      "change_1d_pct": 0.03,
+      "change_5d_pct": 0.36
     },
     "^VIX": {
       "label": "VIX",
-      "price": 15.3,
-      "change_1d_pct": -0.91,
-      "change_5d_pct": -3.41
+      "price": 15.16,
+      "change_1d_pct": -1.81,
+      "change_5d_pct": -4.29
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 78.51,
-      "change_1d_pct": -0.27,
-      "change_5d_pct": -0.11
+      "price": 78.54,
+      "change_1d_pct": -0.24,
+      "change_5d_pct": -0.08
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 104.63,
-      "change_1d_pct": -0.51,
-      "change_5d_pct": 0.29
+      "price": 104.66,
+      "change_1d_pct": -0.48,
+      "change_5d_pct": 0.33
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 81.21,
-      "change_1d_pct": -0.7,
-      "change_5d_pct": 0.42
+      "price": 81.24,
+      "change_1d_pct": -0.67,
+      "change_5d_pct": 0.45
     },
     "GLD": {
       "label": "Złoto",
-      "price": 399.21,
-      "change_1d_pct": 0.21,
-      "change_5d_pct": 0.11
+      "price": 401.97,
+      "change_1d_pct": 0.91,
+      "change_5d_pct": 0.8
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 28.43,
-      "change_1d_pct": 0.18,
-      "change_5d_pct": 1.28
+      "price": 28.39,
+      "change_1d_pct": 0.02,
+      "change_5d_pct": 1.12
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.79,
-      "change_1d_pct": -0.15,
-      "change_5d_pct": -2.54
+      "price": 55.88,
+      "change_1d_pct": 0.0,
+      "change_5d_pct": -2.39
     }
   },
   "news": {
@@ -292,8 +293,15 @@
     "hit_count": 0
   },
   "sec": {
-    "hits": [],
-    "hit_count": 0
+    "hits": [
+      {
+        "title": "8-K - BASIN ELECTRIC POWER COOPERATIVE (0000720515) (Filer)",
+        "keywords": [
+          "impairment"
+        ]
+      }
+    ],
+    "hit_count": 1
   },
   "meta": {
     "fred_key_present": true,
