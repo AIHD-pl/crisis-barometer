@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-18T21:19:49.421602Z",
+  "timestamp": "2026-09-18T23:42:27.885163Z",
   "barometer": {
-    "score": 12.6,
+    "score": 13.8,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -33,7 +33,7 @@
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 0,
+        "score": 15.0,
         "weight": 0.08
       },
       {
@@ -47,7 +47,8 @@
       "Krzywa +0.25 – płaska",
       "HY spread 2.70% – spokojny kredyt",
       "NFCI -0.56 – luźne warunki",
-      "Brak alarmujących nagłówków",
+      "Trafienia w newsach o stresie: 1",
+      "News: Why investors shouldn&#x2019;t be spooked by fears of an October stock-market cr",
       "Brak stresujących 8-K w próbce"
     ]
   },
@@ -287,9 +288,15 @@
     }
   },
   "news": {
-    "hits": [],
+    "hits": [
+      {
+        "title": "Why investors shouldn&#x2019;t be spooked by fears of an October stock-market crash",
+        "keyword": "market crash",
+        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      }
+    ],
     "scanned_titles": 25,
-    "hit_count": 0
+    "hit_count": 1
   },
   "sec": {
     "hits": [],
