@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-19T01:56:48.463982Z",
+  "timestamp": "2026-09-19T06:51:12.307798Z",
   "barometer": {
     "score": 13.8,
     "level": "spokojnie",
@@ -300,7 +300,7 @@
   },
   "sec": {
     "hits": [],
-    "error": "HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=25)"
+    "hit_count": 0
   },
   "meta": {
     "fred_key_present": true,
