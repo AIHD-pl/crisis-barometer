@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-21T19:48:24.500947Z",
+  "timestamp": "2026-09-21T22:54:33.095982Z",
   "barometer": {
     "score": 9.6,
     "level": "spokojnie",
@@ -44,7 +44,7 @@
     ],
     "reasons": [
       "VIX 14.8 – spokój",
-      "Krzywa +0.25 – płaska",
+      "Krzywa +0.20 – płaska",
       "HY spread 2.68% – spokojny kredyt",
       "NFCI -0.56 – luźne warunki",
       "Brak alarmujących nagłówków",
@@ -74,11 +74,10 @@
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.25,
-      "date": "2026-09-18",
-      "change_pct": -7.41,
+      "value": 0.2,
+      "date": "2026-09-21",
+      "change_pct": -20.0,
       "history": [
-        0.41,
         0.41,
         0.4,
         0.39,
@@ -87,17 +86,17 @@
         0.33,
         0.27,
         0.27,
-        0.25
+        0.25,
+        0.2
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.87,
-      "date": "2026-09-18",
-      "change_pct": 6.1,
+      "value": 0.79,
+      "date": "2026-09-21",
+      "change_pct": -9.2,
       "history": [
-        0.87,
         0.86,
         0.88,
         0.95,
@@ -106,7 +105,8 @@
         0.89,
         0.87,
         0.82,
-        0.87
+        0.87,
+        0.79
       ]
     },
     "BAMLH0A0HYM2": {
@@ -132,8 +132,8 @@
       "id": "DFF",
       "label": "Stopa Fed Funds",
       "value": 3.88,
-      "date": "2026-09-17",
-      "change_pct": 6.89,
+      "date": "2026-09-18",
+      "change_pct": 0.0,
       "history": [
         3.63,
         3.63,
@@ -143,27 +143,27 @@
         3.63,
         3.63,
         3.63,
-        3.63,
+        3.88,
         3.88
       ]
     },
     "DTWEXBGS": {
       "id": "DTWEXBGS",
       "label": "Indeks dolara (DXY proxy)",
-      "value": 118.2126,
-      "date": "2026-09-11",
-      "change_pct": 0.11,
+      "value": 119.5133,
+      "date": "2026-09-18",
+      "change_pct": 0.14,
       "history": [
-        118.7479,
-        118.5679,
-        118.6568,
-        118.5296,
-        118.127,
         118.0732,
         117.9127,
         117.8834,
         118.0787,
-        118.2126
+        118.2126,
+        118.6923,
+        118.8822,
+        118.9206,
+        119.3489,
+        119.5133
       ]
     },
     "NFCI": {
@@ -227,63 +227,63 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7772.97,
-      "change_1d_pct": 1.6,
-      "change_5d_pct": 2.01
+      "price": 7764.7,
+      "change_1d_pct": 1.49,
+      "change_5d_pct": 1.9
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 52101.78,
-      "change_1d_pct": 0.81,
-      "change_5d_pct": -0.61
+      "price": 52048.83,
+      "change_1d_pct": 0.71,
+      "change_5d_pct": -0.71
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 27154.89,
-      "change_1d_pct": 2.38,
-      "change_5d_pct": 3.7
+      "price": 27122.09,
+      "change_1d_pct": 2.26,
+      "change_5d_pct": 3.57
     },
     "^VIX": {
       "label": "VIX",
-      "price": 14.89,
-      "change_1d_pct": 0.54,
-      "change_5d_pct": -12.92
+      "price": 14.87,
+      "change_1d_pct": 0.41,
+      "change_5d_pct": -13.04
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 78.71,
-      "change_1d_pct": 0.22,
-      "change_5d_pct": 0.22
+      "price": 78.68,
+      "change_1d_pct": 0.19,
+      "change_5d_pct": 0.19
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 105.07,
-      "change_1d_pct": 0.35,
-      "change_5d_pct": 0.73
+      "price": 105.09,
+      "change_1d_pct": 0.37,
+      "change_5d_pct": 0.76
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 81.81,
+      "price": 81.8,
       "change_1d_pct": 0.68,
       "change_5d_pct": 1.08
     },
     "GLD": {
       "label": "Złoto",
-      "price": 398.54,
-      "change_1d_pct": -0.66,
-      "change_5d_pct": 1.45
+      "price": 398.38,
+      "change_1d_pct": -0.7,
+      "change_5d_pct": 1.41
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 28.43,
-      "change_1d_pct": 0.14,
-      "change_5d_pct": 0.92
+      "price": 28.48,
+      "change_1d_pct": 0.32,
+      "change_5d_pct": 1.1
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.94,
-      "change_1d_pct": 0.15,
-      "change_5d_pct": -1.9
+      "price": 55.9,
+      "change_1d_pct": 0.07,
+      "change_5d_pct": -1.98
     }
   },
   "news": {
