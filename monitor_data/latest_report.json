@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-21T14:38:20.850718Z",
+  "timestamp": "2026-09-21T19:48:24.500947Z",
   "barometer": {
     "score": 9.6,
     "level": "spokojnie",
@@ -227,27 +227,27 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7724.42,
-      "change_1d_pct": 0.97,
-      "change_5d_pct": 1.37
+      "price": 7772.97,
+      "change_1d_pct": 1.6,
+      "change_5d_pct": 2.01
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51900.76,
-      "change_1d_pct": 0.42,
-      "change_5d_pct": -0.99
+      "price": 52101.78,
+      "change_1d_pct": 0.81,
+      "change_5d_pct": -0.61
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 26943.89,
-      "change_1d_pct": 1.59,
-      "change_5d_pct": 2.89
+      "price": 27154.89,
+      "change_1d_pct": 2.38,
+      "change_5d_pct": 3.7
     },
     "^VIX": {
       "label": "VIX",
-      "price": 14.77,
-      "change_1d_pct": -0.27,
-      "change_5d_pct": -13.63
+      "price": 14.89,
+      "change_1d_pct": 0.54,
+      "change_5d_pct": -12.92
     },
     "HYG": {
       "label": "ETF high-yield",
@@ -257,21 +257,21 @@
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 105.0,
-      "change_1d_pct": 0.28,
-      "change_5d_pct": 0.67
+      "price": 105.07,
+      "change_1d_pct": 0.35,
+      "change_5d_pct": 0.73
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 81.7,
-      "change_1d_pct": 0.55,
-      "change_5d_pct": 0.95
+      "price": 81.81,
+      "change_1d_pct": 0.68,
+      "change_5d_pct": 1.08
     },
     "GLD": {
       "label": "Złoto",
-      "price": 397.53,
-      "change_1d_pct": -0.91,
-      "change_5d_pct": 1.19
+      "price": 398.54,
+      "change_1d_pct": -0.66,
+      "change_5d_pct": 1.45
     },
     "UUP": {
       "label": "Dolar ETF",
@@ -281,9 +281,9 @@
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.85,
-      "change_1d_pct": -0.01,
-      "change_5d_pct": -2.06
+      "price": 55.94,
+      "change_1d_pct": 0.15,
+      "change_5d_pct": -1.9
     }
   },
   "news": {
