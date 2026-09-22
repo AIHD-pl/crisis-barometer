@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-22T20:34:52.486749Z",
+  "timestamp": "2026-09-22T23:20:58.945034Z",
   "barometer": {
     "score": 9.6,
     "level": "spokojnie",
@@ -44,8 +44,8 @@
     ],
     "reasons": [
       "VIX 14.9 – spokój",
-      "Krzywa +0.20 – płaska",
-      "HY spread 2.68% – spokojny kredyt",
+      "Krzywa +0.25 – płaska",
+      "HY spread 2.66% – spokojny kredyt",
       "NFCI -0.56 – luźne warunki",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
@@ -74,11 +74,10 @@
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.2,
-      "date": "2026-09-21",
-      "change_pct": -20.0,
+      "value": 0.25,
+      "date": "2026-09-22",
+      "change_pct": 25.0,
       "history": [
-        0.41,
         0.4,
         0.39,
         0.33,
@@ -87,17 +86,17 @@
         0.27,
         0.27,
         0.25,
-        0.2
+        0.2,
+        0.25
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.79,
-      "date": "2026-09-21",
-      "change_pct": -9.2,
+      "value": 0.8,
+      "date": "2026-09-22",
+      "change_pct": 1.27,
       "history": [
-        0.86,
         0.88,
         0.95,
         0.89,
@@ -106,17 +105,17 @@
         0.87,
         0.82,
         0.87,
-        0.79
+        0.79,
+        0.8
       ]
     },
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 2.68,
-      "date": "2026-09-18",
-      "change_pct": -0.74,
+      "value": 2.66,
+      "date": "2026-09-21",
+      "change_pct": -0.75,
       "history": [
-        2.68,
         2.67,
         2.71,
         2.7,
@@ -125,7 +124,8 @@
         2.76,
         2.7,
         2.7,
-        2.68
+        2.68,
+        2.66
       ]
     },
     "DFF": {
