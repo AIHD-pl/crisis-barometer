@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-23T02:05:53.089226Z",
+  "timestamp": "2026-09-23T08:03:21.982973Z",
   "barometer": {
     "score": 9.6,
     "level": "spokojnie",
@@ -227,27 +227,27 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7764.64,
-      "change_1d_pct": -0.0,
-      "change_5d_pct": 2.36
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51863.69,
-      "change_1d_pct": -0.36,
-      "change_5d_pct": -0.44
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 27244.28,
-      "change_1d_pct": 0.45,
-      "change_5d_pct": 4.86
+      "price": NaN,
+      "change_1d_pct": NaN,
+      "change_5d_pct": NaN
     },
     "^VIX": {
       "label": "VIX",
-      "price": 14.21,
-      "change_1d_pct": -4.44,
-      "change_5d_pct": -17.38
+      "price": 14.17,
+      "change_1d_pct": -4.71,
+      "change_5d_pct": -17.62
     },
     "HYG": {
       "label": "ETF high-yield",
