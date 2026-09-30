@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-09-30T14:20:40.601455Z",
+  "timestamp": "2026-09-30T19:42:28.770299Z",
   "barometer": {
-    "score": 12.6,
+    "score": 13.2,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -38,17 +38,18 @@
       },
       {
         "name": "Sygnały SEC (8-K)",
-        "score": 0,
+        "score": 8.0,
         "weight": 0.07
       }
     ],
     "reasons": [
       "VIX 16.0 – normalnie",
       "Krzywa +0.37 – płaska",
-      "HY spread 3.02% – spokojny kredyt",
+      "HY spread 3.08% – spokojny kredyt",
       "NFCI -0.55 – luźne warunki",
       "Brak alarmujących nagłówków",
-      "Brak stresujących 8-K w próbce"
+      "SEC 8-K ze słowami stresu: 1",
+      "8-K: 8-K - Leslie&#39;s, Inc. (0001821806) (Filer)"
     ]
   },
   "fred": {
@@ -112,11 +113,10 @@
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 3.02,
-      "date": "2026-09-28",
-      "change_pct": 3.07,
+      "value": 3.08,
+      "date": "2026-09-29",
+      "change_pct": 1.99,
       "history": [
-        2.76,
         2.7,
         2.7,
         2.68,
@@ -125,7 +125,8 @@
         2.73,
         2.8,
         2.93,
-        3.02
+        3.02,
+        3.08
       ]
     },
     "DFF": {
@@ -188,20 +189,20 @@
     "STLFSI4": {
       "id": "STLFSI4",
       "label": "St. Louis Fed Stress Index",
-      "value": -0.9075,
-      "date": "2026-09-18",
-      "change_pct": -6.94,
+      "value": -0.8074,
+      "date": "2026-09-25",
+      "change_pct": -15.16,
       "history": [
-        -0.6992,
-        -0.8267,
-        -0.5039,
-        -0.7675,
+        -0.8272,
+        -0.5037,
+        -0.7671,
         -0.827,
         -0.8095,
-        -0.85,
-        -0.7901,
-        -0.8486,
-        -0.9075
+        -0.8495,
+        -0.7907,
+        -0.8492,
+        -0.7011,
+        -0.8074
       ]
     },
     "WALCL": {
@@ -227,63 +228,63 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7718.29,
-      "change_1d_pct": 0.62,
-      "change_5d_pct": 0.16
+      "price": 7686.74,
+      "change_1d_pct": 0.21,
+      "change_5d_pct": -0.25
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51440.64,
-      "change_1d_pct": 0.18,
-      "change_5d_pct": -0.14
+      "price": 51073.36,
+      "change_1d_pct": -0.54,
+      "change_5d_pct": -0.85
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 27067.98,
-      "change_1d_pct": 1.01,
-      "change_5d_pct": 0.49
+      "price": 27009.06,
+      "change_1d_pct": 0.79,
+      "change_5d_pct": 0.27
     },
     "^VIX": {
       "label": "VIX",
-      "price": 15.68,
-      "change_1d_pct": -2.24,
-      "change_5d_pct": 3.29
+      "price": 15.96,
+      "change_1d_pct": -0.5,
+      "change_5d_pct": 5.14
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 77.5,
-      "change_1d_pct": 0.18,
-      "change_5d_pct": -0.77
+      "price": 77.24,
+      "change_1d_pct": -0.16,
+      "change_5d_pct": -1.11
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 102.42,
-      "change_1d_pct": 0.0,
-      "change_5d_pct": -1.42
+      "price": 102.12,
+      "change_1d_pct": -0.28,
+      "change_5d_pct": -1.7
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 78.0,
-      "change_1d_pct": -0.29,
-      "change_5d_pct": -3.06
+      "price": 77.68,
+      "change_1d_pct": -0.71,
+      "change_5d_pct": -3.46
     },
     "GLD": {
       "label": "Złoto",
-      "price": 383.09,
-      "change_1d_pct": 0.05,
-      "change_5d_pct": -2.49
+      "price": 380.62,
+      "change_1d_pct": -0.59,
+      "change_5d_pct": -3.12
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 28.7,
-      "change_1d_pct": -0.16,
-      "change_5d_pct": 0.19
+      "price": 28.78,
+      "change_1d_pct": 0.12,
+      "change_5d_pct": 0.47
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 53.9,
-      "change_1d_pct": -0.21,
-      "change_5d_pct": -1.17
+      "price": 53.51,
+      "change_1d_pct": -0.94,
+      "change_5d_pct": -1.9
     }
   },
   "news": {
@@ -292,8 +293,16 @@
     "hit_count": 0
   },
   "sec": {
-    "hits": [],
-    "hit_count": 0
+    "hits": [
+      {
+        "title": "8-K - Leslie&#39;s, Inc. (0001821806) (Filer)",
+        "keywords": [
+          "impairment",
+          "bankruptcy"
+        ]
+      }
+    ],
+    "hit_count": 1
   },
   "meta": {
     "fred_key_present": true,
