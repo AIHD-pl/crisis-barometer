@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-30T19:42:28.770299Z",
+  "timestamp": "2026-09-30T23:16:54.538677Z",
   "barometer": {
     "score": 13.2,
     "level": "spokojnie",
@@ -44,12 +44,12 @@
     ],
     "reasons": [
       "VIX 16.0 – normalnie",
-      "Krzywa +0.37 – płaska",
+      "Krzywa +0.41 – płaska",
       "HY spread 3.08% – spokojny kredyt",
       "NFCI -0.55 – luźne warunki",
       "Brak alarmujących nagłówków",
       "SEC 8-K ze słowami stresu: 1",
-      "8-K: 8-K - Leslie&#39;s, Inc. (0001821806) (Filer)"
+      "8-K: 8-K - Petros Pharmaceuticals, Inc. (0001815903) (Filer)"
     ]
   },
   "fred": {
@@ -75,11 +75,10 @@
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.37,
-      "date": "2026-09-29",
-      "change_pct": 15.62,
+      "value": 0.41,
+      "date": "2026-09-30",
+      "change_pct": 10.81,
       "history": [
-        0.27,
         0.27,
         0.25,
         0.2,
@@ -88,17 +87,17 @@
         0.31,
         0.36,
         0.32,
-        0.37
+        0.37,
+        0.41
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 1.01,
-      "date": "2026-09-29",
-      "change_pct": 5.21,
+      "value": 1.09,
+      "date": "2026-09-30",
+      "change_pct": 7.92,
       "history": [
-        0.87,
         0.82,
         0.87,
         0.79,
@@ -107,7 +106,8 @@
         0.94,
         0.93,
         0.96,
-        1.01
+        1.01,
+        1.09
       ]
     },
     "BAMLH0A0HYM2": {
@@ -133,7 +133,7 @@
       "id": "DFF",
       "label": "Stopa Fed Funds",
       "value": 3.88,
-      "date": "2026-09-28",
+      "date": "2026-09-29",
       "change_pct": 0.0,
       "history": [
         3.88,
@@ -228,63 +228,63 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7686.74,
-      "change_1d_pct": 0.21,
-      "change_5d_pct": -0.25
+      "price": 7651.54,
+      "change_1d_pct": -0.25,
+      "change_5d_pct": -0.71
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51073.36,
-      "change_1d_pct": -0.54,
-      "change_5d_pct": -0.85
+      "price": 50906.05,
+      "change_1d_pct": -0.86,
+      "change_5d_pct": -1.18
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 27009.06,
-      "change_1d_pct": 0.79,
-      "change_5d_pct": 0.27
+      "price": 26861.06,
+      "change_1d_pct": 0.24,
+      "change_5d_pct": -0.28
     },
     "^VIX": {
       "label": "VIX",
-      "price": 15.96,
-      "change_1d_pct": -0.5,
-      "change_5d_pct": 5.14
+      "price": 16.34,
+      "change_1d_pct": 1.87,
+      "change_5d_pct": 7.64
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 77.24,
-      "change_1d_pct": -0.16,
-      "change_5d_pct": -1.11
+      "price": 77.21,
+      "change_1d_pct": -0.19,
+      "change_5d_pct": -1.14
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 102.12,
-      "change_1d_pct": -0.28,
-      "change_5d_pct": -1.7
+      "price": 102.18,
+      "change_1d_pct": -0.22,
+      "change_5d_pct": -1.65
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 77.68,
-      "change_1d_pct": -0.71,
-      "change_5d_pct": -3.46
+      "price": 77.78,
+      "change_1d_pct": -0.58,
+      "change_5d_pct": -3.33
     },
     "GLD": {
       "label": "Złoto",
-      "price": 380.62,
-      "change_1d_pct": -0.59,
-      "change_5d_pct": -3.12
+      "price": 380.84,
+      "change_1d_pct": -0.54,
+      "change_5d_pct": -3.06
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 28.78,
-      "change_1d_pct": 0.12,
-      "change_5d_pct": 0.47
+      "price": 28.77,
+      "change_1d_pct": 0.07,
+      "change_5d_pct": 0.42
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 53.51,
-      "change_1d_pct": -0.94,
-      "change_5d_pct": -1.9
+      "price": 53.4,
+      "change_1d_pct": -1.13,
+      "change_5d_pct": -2.09
     }
   },
   "news": {
@@ -295,9 +295,8 @@
   "sec": {
     "hits": [
       {
-        "title": "8-K - Leslie&#39;s, Inc. (0001821806) (Filer)",
+        "title": "8-K - Petros Pharmaceuticals, Inc. (0001815903) (Filer)",
         "keywords": [
-          "impairment",
           "bankruptcy"
         ]
       }
