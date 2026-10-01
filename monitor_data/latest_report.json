@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-01T02:46:12.829728Z",
+  "timestamp": "2026-10-01T09:31:31.276913Z",
   "barometer": {
     "score": 13.2,
     "level": "spokojnie",
@@ -246,9 +246,9 @@
     },
     "^VIX": {
       "label": "VIX",
-      "price": 16.34,
-      "change_1d_pct": 1.87,
-      "change_5d_pct": 7.64
+      "price": 16.65,
+      "change_1d_pct": 1.9,
+      "change_5d_pct": 6.25
     },
     "HYG": {
       "label": "ETF high-yield",
