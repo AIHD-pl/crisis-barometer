@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-10-13T08:37:26.071241Z",
+  "timestamp": "2026-10-13T16:32:51.597875Z",
   "barometer": {
-    "score": 9.6,
+    "score": 12.6,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
     "components": [
       {
         "name": "VIX / strach",
-        "score": 5,
+        "score": 20,
         "weight": 0.2
       },
       {
@@ -43,9 +43,9 @@
       }
     ],
     "reasons": [
-      "VIX 14.8 – spokój",
+      "VIX 15.2 – normalnie",
       "Krzywa +0.44 – płaska",
-      "HY spread 3.15% – spokojny kredyt",
+      "HY spread 3.11% – spokojny kredyt",
       "NFCI -0.49 – luźne warunki",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
@@ -55,11 +55,10 @@
     "VIXCLS": {
       "id": "VIXCLS",
       "label": "VIX (strach na giełdzie)",
-      "value": 14.84,
-      "date": "2026-10-09",
-      "change_pct": -3.7,
+      "value": 15.21,
+      "date": "2026-10-12",
+      "change_pct": 2.49,
       "history": [
-        16.07,
         16.04,
         16.34,
         16.39,
@@ -68,7 +67,8 @@
         15.01,
         15.08,
         15.41,
-        14.84
+        14.84,
+        15.21
       ]
     },
     "T10Y2Y": {
@@ -112,12 +112,10 @@
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 3.15,
-      "date": "2026-10-08",
-      "change_pct": 1.94,
+      "value": 3.11,
+      "date": "2026-10-12",
+      "change_pct": 0.0,
       "history": [
-        2.93,
-        3.02,
         3.08,
         3.12,
         3.24,
@@ -125,7 +123,9 @@
         3.12,
         3.03,
         3.09,
-        3.15
+        3.15,
+        3.11,
+        3.11
       ]
     },
     "DFF": {
@@ -227,68 +227,68 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7807.24,
-      "change_1d_pct": -0.06,
-      "change_5d_pct": 0.43
+      "price": 7804.61,
+      "change_1d_pct": -0.03,
+      "change_5d_pct": -0.18
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51850.55,
-      "change_1d_pct": 0.38,
-      "change_5d_pct": 1.14
+      "price": 51694.14,
+      "change_1d_pct": -0.3,
+      "change_5d_pct": 0.34
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 27245.9,
-      "change_1d_pct": -0.44,
-      "change_5d_pct": -0.84
+      "price": 27238.38,
+      "change_1d_pct": -0.03,
+      "change_5d_pct": -1.31
     },
     "^VIX": {
       "label": "VIX",
-      "price": 15.45,
-      "change_1d_pct": 1.58,
-      "change_5d_pct": 2.93
+      "price": 15.44,
+      "change_1d_pct": 1.51,
+      "change_5d_pct": 2.86
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 77.29,
-      "change_1d_pct": 0.08,
-      "change_5d_pct": 0.4
+      "price": 77.05,
+      "change_1d_pct": -0.31,
+      "change_5d_pct": -0.28
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 102.58,
-      "change_1d_pct": 0.17,
-      "change_5d_pct": 0.74
+      "price": 102.5,
+      "change_1d_pct": -0.08,
+      "change_5d_pct": 0.35
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 78.05,
-      "change_1d_pct": 0.09,
-      "change_5d_pct": 1.22
+      "price": 78.29,
+      "change_1d_pct": 0.31,
+      "change_5d_pct": 1.31
     },
     "GLD": {
       "label": "Złoto",
-      "price": 382.15,
-      "change_1d_pct": -0.63,
-      "change_5d_pct": 0.69
+      "price": 381.13,
+      "change_1d_pct": -0.27,
+      "change_5d_pct": -0.3
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 29.13,
-      "change_1d_pct": 0.38,
+      "price": 29.04,
+      "change_1d_pct": -0.31,
       "change_5d_pct": 0.48
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.05,
-      "change_1d_pct": 0.58,
-      "change_5d_pct": 2.17
+      "price": 54.97,
+      "change_1d_pct": -0.14,
+      "change_5d_pct": 1.79
     }
   },
   "news": {
     "hits": [],
-    "scanned_titles": 25,
+    "scanned_titles": 11,
     "hit_count": 0
   },
   "sec": {
