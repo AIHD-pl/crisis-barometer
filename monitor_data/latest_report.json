@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-14T10:45:12.358873Z",
+  "timestamp": "2026-10-14T15:36:02.544153Z",
   "barometer": {
-    "score": 13.8,
+    "score": 14.4,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -38,29 +38,29 @@
       },
       {
         "name": "Sygnały SEC (8-K)",
-        "score": 0,
+        "score": 8.0,
         "weight": 0.07
       }
     ],
     "reasons": [
-      "VIX 15.2 – normalnie",
+      "VIX 15.3 – normalnie",
       "Krzywa +0.42 – płaska",
-      "HY spread 3.11% – spokojny kredyt",
+      "HY spread 3.16% – spokojny kredyt",
       "NFCI -0.49 – luźne warunki",
       "Trafienia w newsach o stresie: 1",
-      "News: &#x2018;I earn $110,000 a year&#x2019;: I lost my home in the Great Recession. I",
-      "Brak stresujących 8-K w próbce"
+      "News: I lost my home in the Great Recession. I still rent in my 50s. Why is that judge",
+      "SEC 8-K ze słowami stresu: 1",
+      "8-K: 8-K - DAKTRONICS INC /SD/ (0000915779) (Filer)"
     ]
   },
   "fred": {
     "VIXCLS": {
       "id": "VIXCLS",
       "label": "VIX (strach na giełdzie)",
-      "value": 15.21,
-      "date": "2026-10-12",
-      "change_pct": 2.49,
+      "value": 15.27,
+      "date": "2026-10-13",
+      "change_pct": 0.39,
       "history": [
-        16.04,
         16.34,
         16.39,
         15.31,
@@ -69,7 +69,8 @@
         15.08,
         15.41,
         14.84,
-        15.21
+        15.21,
+        15.27
       ]
     },
     "T10Y2Y": {
@@ -113,11 +114,10 @@
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 3.11,
-      "date": "2026-10-12",
-      "change_pct": 0.0,
+      "value": 3.16,
+      "date": "2026-10-13",
+      "change_pct": 1.61,
       "history": [
-        3.08,
         3.12,
         3.24,
         3.1,
@@ -126,7 +126,8 @@
         3.09,
         3.15,
         3.11,
-        3.11
+        3.11,
+        3.16
       ]
     },
     "DFF": {
@@ -228,69 +229,69 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7805.45,
-      "change_1d_pct": -0.02,
-      "change_5d_pct": -0.17
+      "price": 7741.32,
+      "change_1d_pct": -0.82,
+      "change_5d_pct": -0.77
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51670.1,
-      "change_1d_pct": -0.35,
-      "change_5d_pct": 0.29
+      "price": 51648.63,
+      "change_1d_pct": -0.04,
+      "change_5d_pct": 0.92
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 27204.38,
-      "change_1d_pct": -0.15,
-      "change_5d_pct": -1.43
+      "price": 26881.63,
+      "change_1d_pct": -1.19,
+      "change_5d_pct": -2.39
     },
     "^VIX": {
       "label": "VIX",
-      "price": 15.27,
-      "change_1d_pct": 0.0,
-      "change_5d_pct": 1.26
+      "price": 15.86,
+      "change_1d_pct": 3.86,
+      "change_5d_pct": 5.17
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 77.09,
-      "change_1d_pct": -0.26,
-      "change_5d_pct": -0.23
+      "price": 76.82,
+      "change_1d_pct": -0.34,
+      "change_5d_pct": -0.46
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 102.55,
-      "change_1d_pct": -0.03,
-      "change_5d_pct": 0.4
+      "price": 102.39,
+      "change_1d_pct": -0.15,
+      "change_5d_pct": 0.29
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 78.37,
-      "change_1d_pct": 0.41,
-      "change_5d_pct": 1.41
+      "price": 78.36,
+      "change_1d_pct": -0.02,
+      "change_5d_pct": 1.56
     },
     "GLD": {
       "label": "Złoto",
-      "price": 381.67,
-      "change_1d_pct": -0.13,
-      "change_5d_pct": -0.16
+      "price": 374.76,
+      "change_1d_pct": -1.81,
+      "change_5d_pct": -0.3
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 29.02,
-      "change_1d_pct": -0.38,
-      "change_5d_pct": 0.42
+      "price": 29.23,
+      "change_1d_pct": 0.71,
+      "change_5d_pct": 0.64
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 54.82,
-      "change_1d_pct": -0.42,
-      "change_5d_pct": 1.5
+      "price": 54.31,
+      "change_1d_pct": -0.92,
+      "change_5d_pct": 1.05
     }
   },
   "news": {
     "hits": [
       {
-        "title": "&#x2018;I earn $110,000 a year&#x2019;: I lost my home in the Great Recession. I&#x2019;m renting in my 50s. Why is that judged as failure?",
+        "title": "I lost my home in the Great Recession. I still rent in my 50s. Why is that judged as failure?",
         "keyword": "recession",
         "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
       }
@@ -299,8 +300,15 @@
     "hit_count": 1
   },
   "sec": {
-    "hits": [],
-    "hit_count": 0
+    "hits": [
+      {
+        "title": "8-K - DAKTRONICS INC /SD/ (0000915779) (Filer)",
+        "keywords": [
+          "impairment"
+        ]
+      }
+    ],
+    "hit_count": 1
   },
   "meta": {
     "fred_key_present": true,
