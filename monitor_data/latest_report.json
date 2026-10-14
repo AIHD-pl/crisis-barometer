@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-14T05:34:52.906778Z",
+  "timestamp": "2026-10-14T10:45:12.358873Z",
   "barometer": {
-    "score": 12.6,
+    "score": 13.8,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -33,7 +33,7 @@
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 0,
+        "score": 15.0,
         "weight": 0.08
       },
       {
@@ -47,7 +47,8 @@
       "Krzywa +0.42 – płaska",
       "HY spread 3.11% – spokojny kredyt",
       "NFCI -0.49 – luźne warunki",
-      "Brak alarmujących nagłówków",
+      "Trafienia w newsach o stresie: 1",
+      "News: &#x2018;I earn $110,000 a year&#x2019;: I lost my home in the Great Recession. I",
       "Brak stresujących 8-K w próbce"
     ]
   },
@@ -246,8 +247,8 @@
     "^VIX": {
       "label": "VIX",
       "price": 15.27,
-      "change_1d_pct": 0.39,
-      "change_5d_pct": 1.73
+      "change_1d_pct": 0.0,
+      "change_5d_pct": 1.26
     },
     "HYG": {
       "label": "ETF high-yield",
@@ -287,9 +288,15 @@
     }
   },
   "news": {
-    "hits": [],
+    "hits": [
+      {
+        "title": "&#x2018;I earn $110,000 a year&#x2019;: I lost my home in the Great Recession. I&#x2019;m renting in my 50s. Why is that judged as failure?",
+        "keyword": "recession",
+        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      }
+    ],
     "scanned_titles": 25,
-    "hit_count": 0
+    "hit_count": 1
   },
   "sec": {
     "hits": [],
