@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-15T17:26:19.510233Z",
+  "timestamp": "2026-10-15T20:37:45.024085Z",
   "barometer": {
-    "score": 13.8,
+    "score": 13.2,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -33,12 +33,12 @@
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 15.0,
+        "score": 0,
         "weight": 0.08
       },
       {
         "name": "Sygnały SEC (8-K)",
-        "score": 0,
+        "score": 8.0,
         "weight": 0.07
       }
     ],
@@ -47,9 +47,9 @@
       "Krzywa +0.37 – płaska",
       "HY spread 3.25% – spokojny kredyt",
       "NFCI -0.50 – luźne warunki",
-      "Trafienia w newsach o stresie: 1",
-      "News: &#x2018;Some people did everything right&#x2019;: I lost my home in the Great Re",
-      "Brak stresujących 8-K w próbce"
+      "Brak alarmujących nagłówków",
+      "SEC 8-K ze słowami stresu: 1",
+      "8-K: 8-K - Greenlane Holdings, Inc. (0001743745) (Filer)"
     ]
   },
   "fred": {
@@ -133,7 +133,7 @@
       "id": "DFF",
       "label": "Stopa Fed Funds",
       "value": 3.88,
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "change_pct": 0.0,
       "history": [
         3.88,
@@ -208,11 +208,10 @@
     "WALCL": {
       "id": "WALCL",
       "label": "Bilans Fed (płynność)",
-      "value": 6747560.0,
-      "date": "2026-10-07",
-      "change_pct": 0.07,
+      "value": 6755639.0,
+      "date": "2026-10-14",
+      "change_pct": 0.12,
       "history": [
-        6748567.0,
         6759955.0,
         6745699.0,
         6730912.0,
@@ -221,86 +220,88 @@
         6746548.0,
         6747704.0,
         6743031.0,
-        6747560.0
+        6747560.0,
+        6755639.0
       ]
     }
   },
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7731.84,
-      "change_1d_pct": 0.17,
-      "change_5d_pct": -0.43
+      "price": 7744.06,
+      "change_1d_pct": 0.33,
+      "change_5d_pct": -0.27
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 52105.65,
-      "change_1d_pct": 0.94,
-      "change_5d_pct": 1.71
+      "price": 52177.69,
+      "change_1d_pct": 1.08,
+      "change_5d_pct": 1.85
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 26629.03,
-      "change_1d_pct": -0.24,
-      "change_5d_pct": -2.08
+      "price": 26713.03,
+      "change_1d_pct": 0.08,
+      "change_5d_pct": -1.77
     },
     "^VIX": {
       "label": "VIX",
-      "price": 16.79,
-      "change_1d_pct": -0.47,
-      "change_5d_pct": 8.96
+      "price": 16.46,
+      "change_1d_pct": -2.43,
+      "change_5d_pct": 6.81
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 77.07,
-      "change_1d_pct": 0.34,
-      "change_5d_pct": -0.09
+      "price": 77.13,
+      "change_1d_pct": 0.42,
+      "change_5d_pct": -0.01
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 103.46,
-      "change_1d_pct": 0.78,
-      "change_5d_pct": 0.97
+      "price": 103.5,
+      "change_1d_pct": 0.82,
+      "change_5d_pct": 1.01
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 80.07,
-      "change_1d_pct": 1.5,
-      "change_5d_pct": 2.83
+      "price": 79.97,
+      "change_1d_pct": 1.37,
+      "change_5d_pct": 2.7
     },
     "GLD": {
       "label": "Złoto",
-      "price": 380.26,
-      "change_1d_pct": 1.14,
-      "change_5d_pct": 0.43
+      "price": 382.71,
+      "change_1d_pct": 1.79,
+      "change_5d_pct": 1.08
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 29.01,
-      "change_1d_pct": -0.37,
-      "change_5d_pct": 0.11
+      "price": 29.0,
+      "change_1d_pct": -0.41,
+      "change_5d_pct": 0.07
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.19,
-      "change_1d_pct": 1.22,
-      "change_5d_pct": 1.76
+      "price": 55.27,
+      "change_1d_pct": 1.38,
+      "change_5d_pct": 1.92
     }
   },
   "news": {
-    "hits": [
-      {
-        "title": "&#x2018;Some people did everything right&#x2019;: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-        "keyword": "recession",
-        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
-      }
-    ],
+    "hits": [],
     "scanned_titles": 25,
-    "hit_count": 1
+    "hit_count": 0
   },
   "sec": {
-    "hits": [],
-    "hit_count": 0
+    "hits": [
+      {
+        "title": "8-K - Greenlane Holdings, Inc. (0001743745) (Filer)",
+        "keywords": [
+          "bankruptcy"
+        ]
+      }
+    ],
+    "hit_count": 1
   },
   "meta": {
     "fred_key_present": true,
