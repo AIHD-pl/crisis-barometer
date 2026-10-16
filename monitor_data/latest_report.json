@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-16T06:33:39.829047Z",
+  "timestamp": "2026-10-16T11:58:35.734234Z",
   "barometer": {
-    "score": 14.4,
+    "score": 12.6,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -33,12 +33,12 @@
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 15.0,
+        "score": 0,
         "weight": 0.08
       },
       {
         "name": "Sygnały SEC (8-K)",
-        "score": 8.0,
+        "score": 0,
         "weight": 0.07
       }
     ],
@@ -47,10 +47,8 @@
       "Krzywa +0.33 – płaska",
       "HY spread 3.25% – spokojny kredyt",
       "NFCI -0.50 – luźne warunki",
-      "Trafienia w newsach o stresie: 1",
-      "News: &#x2018;Some people did everything right&#x2019;: I lost my home in the Great Re",
-      "SEC 8-K ze słowami stresu: 1",
-      "8-K: 8-K - NORTHRIM BANCORP INC (0001163370) (Filer)"
+      "Brak alarmujących nagłówków",
+      "Brak stresujących 8-K w próbce"
     ]
   },
   "fred": {
@@ -247,9 +245,9 @@
     },
     "^VIX": {
       "label": "VIX",
-      "price": 16.46,
-      "change_1d_pct": -2.43,
-      "change_5d_pct": 6.81
+      "price": 16.14,
+      "change_1d_pct": -1.94,
+      "change_5d_pct": 8.76
     },
     "HYG": {
       "label": "ETF high-yield",
@@ -289,26 +287,13 @@
     }
   },
   "news": {
-    "hits": [
-      {
-        "title": "&#x2018;Some people did everything right&#x2019;: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-        "keyword": "recession",
-        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
-      }
-    ],
+    "hits": [],
     "scanned_titles": 25,
-    "hit_count": 1
+    "hit_count": 0
   },
   "sec": {
-    "hits": [
-      {
-        "title": "8-K - NORTHRIM BANCORP INC (0001163370) (Filer)",
-        "keywords": [
-          "impairment"
-        ]
-      }
-    ],
-    "hit_count": 1
+    "hits": [],
+    "hit_count": 0
   },
   "meta": {
     "fred_key_present": true,
