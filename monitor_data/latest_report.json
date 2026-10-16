@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-15T23:22:53.168748Z",
+  "timestamp": "2026-10-16T01:56:10.178066Z",
   "barometer": {
-    "score": 13.2,
+    "score": 14.4,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -33,7 +33,7 @@
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 0,
+        "score": 15.0,
         "weight": 0.08
       },
       {
@@ -47,7 +47,8 @@
       "Krzywa +0.33 – płaska",
       "HY spread 3.25% – spokojny kredyt",
       "NFCI -0.50 – luźne warunki",
-      "Brak alarmujących nagłówków",
+      "Trafienia w newsach o stresie: 1",
+      "News: &#x2018;Some people did everything right&#x2019;: I lost my home in the Great Re",
       "SEC 8-K ze słowami stresu: 1",
       "8-K: 8-K - NORTHRIM BANCORP INC (0001163370) (Filer)"
     ]
@@ -288,9 +289,15 @@
     }
   },
   "news": {
-    "hits": [],
-    "scanned_titles": 14,
-    "hit_count": 0
+    "hits": [
+      {
+        "title": "&#x2018;Some people did everything right&#x2019;: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
+        "keyword": "recession",
+        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      }
+    ],
+    "scanned_titles": 25,
+    "hit_count": 1
   },
   "sec": {
     "hits": [
