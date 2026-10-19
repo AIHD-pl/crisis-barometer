@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-19T08:10:40.001992Z",
+  "timestamp": "2026-10-19T15:57:28.499213Z",
   "barometer": {
-    "score": 15.0,
+    "score": 12.6,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -28,12 +28,12 @@
       },
       {
         "name": "Rynki akcji / sektory",
-        "score": 8.0,
+        "score": 0,
         "weight": 0.15
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 15.0,
+        "score": 0,
         "weight": 0.08
       },
       {
@@ -43,13 +43,11 @@
       }
     ],
     "reasons": [
-      "VIX 16.5 – normalnie",
+      "VIX 20.0 – normalnie",
       "Krzywa +0.35 – płaska",
-      "HY spread 3.23% – spokojny kredyt",
+      "HY spread 3.31% – spokojny kredyt",
       "NFCI -0.50 – luźne warunki",
-      "S&P 500 -1.1% dziennie",
-      "Trafienia w newsach o stresie: 1",
-      "News: &#x2018;Some people did everything right&#x2019;: I lost my home in the Great Re",
+      "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
   },
@@ -57,11 +55,10 @@
     "VIXCLS": {
       "id": "VIXCLS",
       "label": "VIX (strach na giełdzie)",
-      "value": 16.46,
-      "date": "2026-10-15",
-      "change_pct": -2.43,
+      "value": 19.99,
+      "date": "2026-10-16",
+      "change_pct": 21.45,
       "history": [
-        15.31,
         15.52,
         15.01,
         15.08,
@@ -70,7 +67,8 @@
         15.21,
         15.27,
         16.87,
-        16.46
+        16.46,
+        19.99
       ]
     },
     "T10Y2Y": {
@@ -114,11 +112,10 @@
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 3.23,
-      "date": "2026-10-15",
-      "change_pct": -0.62,
+      "value": 3.31,
+      "date": "2026-10-16",
+      "change_pct": 2.48,
       "history": [
-        3.1,
         3.12,
         3.03,
         3.09,
@@ -127,7 +124,8 @@
         3.11,
         3.16,
         3.25,
-        3.23
+        3.23,
+        3.31
       ]
     },
     "DFF": {
@@ -229,75 +227,69 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7659.44,
-      "change_1d_pct": -1.09,
-      "change_5d_pct": -1.95
+      "price": 7723.95,
+      "change_1d_pct": 0.84,
+      "change_5d_pct": -1.07
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 52002.41,
-      "change_1d_pct": -0.34,
-      "change_5d_pct": 0.67
+      "price": 52078.81,
+      "change_1d_pct": 0.15,
+      "change_5d_pct": 0.44
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 26140.03,
-      "change_1d_pct": -2.15,
-      "change_5d_pct": -4.48
+      "price": 26592.64,
+      "change_1d_pct": 1.73,
+      "change_5d_pct": -2.4
     },
     "^VIX": {
       "label": "VIX",
-      "price": 18.48,
-      "change_1d_pct": -7.55,
-      "change_5d_pct": 21.5
+      "price": 17.51,
+      "change_1d_pct": -12.41,
+      "change_5d_pct": 15.12
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 76.86,
-      "change_1d_pct": -0.35,
-      "change_5d_pct": -0.48
+      "price": 76.9,
+      "change_1d_pct": 0.06,
+      "change_5d_pct": -0.5
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 103.4,
-      "change_1d_pct": -0.1,
-      "change_5d_pct": 0.97
+      "price": 102.96,
+      "change_1d_pct": -0.43,
+      "change_5d_pct": 0.37
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 80.05,
-      "change_1d_pct": 0.1,
-      "change_5d_pct": 2.65
+      "price": 79.56,
+      "change_1d_pct": -0.62,
+      "change_5d_pct": 1.93
     },
     "GLD": {
       "label": "Złoto",
-      "price": 382.01,
-      "change_1d_pct": -0.18,
-      "change_5d_pct": -0.67
+      "price": 379.52,
+      "change_1d_pct": -0.65,
+      "change_5d_pct": -0.69
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 28.92,
-      "change_1d_pct": -0.28,
-      "change_5d_pct": -0.34
+      "price": 28.99,
+      "change_1d_pct": 0.24,
+      "change_5d_pct": -0.48
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.52,
-      "change_1d_pct": 0.45,
-      "change_5d_pct": 1.44
+      "price": 55.24,
+      "change_1d_pct": -0.51,
+      "change_5d_pct": 0.34
     }
   },
   "news": {
-    "hits": [
-      {
-        "title": "&#x2018;Some people did everything right&#x2019;: I lost my home in the Great Recession. I rent in my 50s. Why is that judged as failure?",
-        "keyword": "recession",
-        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
-      }
-    ],
+    "hits": [],
     "scanned_titles": 25,
-    "hit_count": 1
+    "hit_count": 0
   },
   "sec": {
     "hits": [],
