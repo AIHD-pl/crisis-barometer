@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20T03:48:12.381435Z",
+  "timestamp": "2026-10-20T08:57:37.896010Z",
   "barometer": {
     "score": 12.6,
     "level": "spokojnie",
@@ -233,7 +233,7 @@
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51966.0,
+      "price": 51966.03,
       "change_1d_pct": -0.07,
       "change_5d_pct": 0.22
     },
@@ -245,9 +245,9 @@
     },
     "^VIX": {
       "label": "VIX",
-      "price": 18.44,
-      "change_1d_pct": -7.75,
-      "change_5d_pct": 21.24
+      "price": 18.4,
+      "change_1d_pct": -0.22,
+      "change_5d_pct": 20.5
     },
     "HYG": {
       "label": "ETF high-yield",
