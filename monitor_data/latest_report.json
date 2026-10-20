@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-20T00:02:00.944791Z",
+  "timestamp": "2026-10-20T03:48:12.381435Z",
   "barometer": {
-    "score": 11.2,
+    "score": 12.6,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -23,7 +23,7 @@
       },
       {
         "name": "Warunki finansowe (NFCI)",
-        "score": 0.0,
+        "score": 10,
         "weight": 0.14
       },
       {
@@ -46,7 +46,7 @@
       "VIX 20.0 – normalnie",
       "Krzywa +0.38 – płaska",
       "HY spread 3.31% – spokojny kredyt",
-      "Brak NFCI",
+      "NFCI -0.50 – luźne warunki",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
@@ -150,16 +150,40 @@
     "DTWEXBGS": {
       "id": "DTWEXBGS",
       "label": "Indeks dolara (DXY proxy)",
-      "value": null,
-      "date": null,
-      "change_pct": null
+      "value": 121.4048,
+      "date": "2026-10-16",
+      "change_pct": -0.14,
+      "history": [
+        121.3848,
+        121.2708,
+        120.8976,
+        121.2558,
+        121.4469,
+        121.6023,
+        121.4433,
+        122.0037,
+        121.5693,
+        121.4048
+      ]
     },
     "NFCI": {
       "id": "NFCI",
       "label": "Chicago Fed National Financial Conditions",
-      "value": null,
-      "date": null,
-      "change_pct": null
+      "value": -0.499,
+      "date": "2026-10-09",
+      "change_pct": 1.58,
+      "history": [
+        -0.544,
+        -0.547,
+        -0.549,
+        -0.547,
+        -0.543,
+        -0.536,
+        -0.527,
+        -0.517,
+        -0.507,
+        -0.499
+      ]
     },
     "STLFSI4": {
       "id": "STLFSI4",
@@ -209,7 +233,7 @@
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 51966.03,
+      "price": 51966.0,
       "change_1d_pct": -0.07,
       "change_5d_pct": 0.22
     },
@@ -227,39 +251,39 @@
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": NaN,
-      "change_1d_pct": NaN,
-      "change_5d_pct": NaN
+      "price": 76.83,
+      "change_1d_pct": -0.04,
+      "change_5d_pct": -0.6
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": NaN,
-      "change_1d_pct": NaN,
-      "change_5d_pct": NaN
+      "price": 102.88,
+      "change_1d_pct": -0.5,
+      "change_5d_pct": 0.29
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": NaN,
-      "change_1d_pct": NaN,
-      "change_5d_pct": NaN
+      "price": 79.46,
+      "change_1d_pct": -0.74,
+      "change_5d_pct": 1.81
     },
     "GLD": {
       "label": "Złoto",
-      "price": NaN,
-      "change_1d_pct": NaN,
-      "change_5d_pct": NaN
+      "price": 379.69,
+      "change_1d_pct": -0.61,
+      "change_5d_pct": -0.64
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": NaN,
-      "change_1d_pct": NaN,
-      "change_5d_pct": NaN
+      "price": 29.0,
+      "change_1d_pct": 0.28,
+      "change_5d_pct": -0.45
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": NaN,
-      "change_1d_pct": NaN,
-      "change_5d_pct": NaN
+      "price": 55.06,
+      "change_1d_pct": -0.83,
+      "change_5d_pct": 0.02
     }
   },
   "news": {
