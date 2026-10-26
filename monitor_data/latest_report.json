@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-10-26T05:31:37.219299Z",
+  "timestamp": "2026-10-26T11:42:32.962123Z",
   "barometer": {
-    "score": 12.6,
+    "score": 13.2,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -38,7 +38,7 @@
       },
       {
         "name": "Sygnały SEC (8-K)",
-        "score": 0,
+        "score": 8.0,
         "weight": 0.07
       }
     ],
@@ -48,7 +48,8 @@
       "HY spread 3.40% – spokojny kredyt",
       "NFCI -0.50 – luźne warunki",
       "Brak alarmujących nagłówków",
-      "Brak stresujących 8-K w próbce"
+      "SEC 8-K ze słowami stresu: 1",
+      "8-K: 8-K - Getty Images Holdings, Inc. (0001898496) (Filer)"
     ]
   },
   "fred": {
@@ -245,9 +246,9 @@
     },
     "^VIX": {
       "label": "VIX",
-      "price": 19.45,
-      "change_1d_pct": 2.21,
-      "change_5d_pct": -2.7
+      "price": 19.53,
+      "change_1d_pct": 0.41,
+      "change_5d_pct": 5.91
     },
     "HYG": {
       "label": "ETF high-yield",
@@ -292,8 +293,15 @@
     "hit_count": 0
   },
   "sec": {
-    "hits": [],
-    "hit_count": 0
+    "hits": [
+      {
+        "title": "8-K - Getty Images Holdings, Inc. (0001898496) (Filer)",
+        "keywords": [
+          "bankruptcy"
+        ]
+      }
+    ],
+    "hit_count": 1
   },
   "meta": {
     "fred_key_present": true,
