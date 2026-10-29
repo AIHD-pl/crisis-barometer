@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-29T17:09:13.264327Z",
+  "timestamp": "2026-10-29T22:07:17.091640Z",
   "barometer": {
     "score": 12.6,
     "level": "spokojnie",
@@ -44,7 +44,7 @@
     ],
     "reasons": [
       "VIX 16.9 – normalnie",
-      "Krzywa +0.38 – płaska",
+      "Krzywa +0.37 – płaska",
       "HY spread 3.14% – spokojny kredyt",
       "NFCI -0.49 – luźne warunki",
       "Brak alarmujących nagłówków",
@@ -74,11 +74,10 @@
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.38,
-      "date": "2026-10-28",
-      "change_pct": 31.03,
+      "value": 0.37,
+      "date": "2026-10-29",
+      "change_pct": -2.63,
       "history": [
-        0.33,
         0.35,
         0.38,
         0.33,
@@ -87,17 +86,17 @@
         0.31,
         0.32,
         0.29,
-        0.38
+        0.38,
+        0.37
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.87,
-      "date": "2026-10-28",
-      "change_pct": 12.99,
+      "value": 0.8,
+      "date": "2026-10-29",
+      "change_pct": -8.05,
       "history": [
-        0.82,
         0.83,
         0.88,
         0.86,
@@ -106,7 +105,8 @@
         0.78,
         0.78,
         0.77,
-        0.87
+        0.87,
+        0.8
       ]
     },
     "BAMLH0A0HYM2": {
@@ -132,7 +132,7 @@
       "id": "DFF",
       "label": "Stopa Fed Funds",
       "value": 3.88,
-      "date": "2026-10-27",
+      "date": "2026-10-28",
       "change_pct": 0.0,
       "history": [
         3.88,
@@ -207,11 +207,10 @@
     "WALCL": {
       "id": "WALCL",
       "label": "Bilans Fed (płynność)",
-      "value": 6753604.0,
-      "date": "2026-10-21",
-      "change_pct": -0.03,
+      "value": 6745635.0,
+      "date": "2026-10-28",
+      "change_pct": -0.12,
       "history": [
-        6745699.0,
         6730912.0,
         6737204.0,
         6740619.0,
@@ -220,64 +219,65 @@
         6743031.0,
         6747560.0,
         6755639.0,
-        6753604.0
+        6753604.0,
+        6745635.0
       ]
     }
   },
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7714.09,
-      "change_1d_pct": -0.39,
-      "change_5d_pct": 0.66
+      "price": 7720.39,
+      "change_1d_pct": -0.3,
+      "change_5d_pct": 0.74
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 52274.36,
-      "change_1d_pct": -0.38,
-      "change_5d_pct": -1.12
+      "price": 52342.56,
+      "change_1d_pct": -0.25,
+      "change_5d_pct": -0.99
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 26189.7,
-      "change_1d_pct": -1.36,
-      "change_5d_pct": 0.7
+      "price": 26184.72,
+      "change_1d_pct": -1.38,
+      "change_5d_pct": 0.68
     },
     "^VIX": {
       "label": "VIX",
-      "price": 16.3,
-      "change_1d_pct": -3.61,
-      "change_5d_pct": -14.35
+      "price": 17.2,
+      "change_1d_pct": 1.71,
+      "change_5d_pct": -9.62
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 77.51,
-      "change_1d_pct": -0.1,
-      "change_5d_pct": 0.53
+      "price": 77.58,
+      "change_1d_pct": -0.01,
+      "change_5d_pct": 0.62
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 104.01,
-      "change_1d_pct": -0.05,
-      "change_5d_pct": -0.25
+      "price": 104.22,
+      "change_1d_pct": 0.14,
+      "change_5d_pct": -0.06
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 81.26,
-      "change_1d_pct": 0.33,
-      "change_5d_pct": -0.59
+      "price": 81.49,
+      "change_1d_pct": 0.62,
+      "change_5d_pct": -0.31
     },
     "GLD": {
       "label": "Złoto",
-      "price": 368.58,
+      "price": 368.57,
       "change_1d_pct": -1.32,
       "change_5d_pct": -0.12
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 29.02,
-      "change_1d_pct": -0.14,
-      "change_5d_pct": 0.42
+      "price": 29.04,
+      "change_1d_pct": -0.07,
+      "change_5d_pct": 0.48
     },
     "XLF": {
       "label": "Sektor finansowy",
