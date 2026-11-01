@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-01T00:42:56.168547Z",
+  "timestamp": "2026-11-01T06:57:39.322268Z",
   "barometer": {
-    "score": 13.8,
+    "score": 5.2,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -13,17 +13,17 @@
       },
       {
         "name": "Krzywa rentowności",
-        "score": 25,
+        "score": 0.0,
         "weight": 0.18
       },
       {
         "name": "Spready kredytowe HY",
-        "score": 15,
+        "score": 0.0,
         "weight": 0.18
       },
       {
         "name": "Warunki finansowe (NFCI)",
-        "score": 10,
+        "score": 0.0,
         "weight": 0.14
       },
       {
@@ -43,10 +43,10 @@
       }
     ],
     "reasons": [
-      "VIX 17.2 – normalnie",
-      "Krzywa +0.38 – płaska",
-      "HY spread 3.26% – spokojny kredyt",
-      "NFCI -0.49 – luźne warunki",
+      "VIX 19.4 – normalnie",
+      "Brak krzywej 10y-2y",
+      "Brak spreadów HY",
+      "Brak NFCI",
       "S&P 500 -1.8% dziennie",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
@@ -56,173 +56,65 @@
     "VIXCLS": {
       "id": "VIXCLS",
       "label": "VIX (strach na giełdzie)",
-      "value": 17.2,
-      "date": "2026-10-29",
-      "change_pct": 1.71,
-      "history": [
-        19.99,
-        18.44,
-        17.31,
-        16.68,
-        19.03,
-        19.45,
-        18.39,
-        17.52,
-        16.91,
-        17.2
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.38,
-      "date": "2026-10-30",
-      "change_pct": 2.7,
-      "history": [
-        0.38,
-        0.33,
-        0.32,
-        0.31,
-        0.31,
-        0.32,
-        0.29,
-        0.38,
-        0.37,
-        0.38
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.78,
-      "date": "2026-10-30",
-      "change_pct": -2.5,
-      "history": [
-        0.88,
-        0.86,
-        0.88,
-        0.74,
-        0.78,
-        0.78,
-        0.77,
-        0.87,
-        0.8,
-        0.78
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 3.26,
-      "date": "2026-10-29",
-      "change_pct": 3.82,
-      "history": [
-        3.31,
-        3.29,
-        3.33,
-        3.27,
-        3.4,
-        3.38,
-        3.3,
-        3.18,
-        3.14,
-        3.26
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "DFF": {
       "id": "DFF",
       "label": "Stopa Fed Funds",
-      "value": 3.88,
-      "date": "2026-10-29",
-      "change_pct": 0.0,
-      "history": [
-        3.88,
-        3.88,
-        3.88,
-        3.88,
-        3.88,
-        3.88,
-        3.88,
-        3.88,
-        3.88,
-        3.88
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "DTWEXBGS": {
       "id": "DTWEXBGS",
       "label": "Indeks dolara (DXY proxy)",
-      "value": 121.3202,
-      "date": "2026-10-23",
-      "change_pct": -0.03,
-      "history": [
-        121.6023,
-        121.4433,
-        122.0037,
-        121.5693,
-        121.4048,
-        121.3248,
-        121.116,
-        121.3422,
-        121.3531,
-        121.3202
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "NFCI": {
       "id": "NFCI",
       "label": "Chicago Fed National Financial Conditions",
-      "value": -0.487,
-      "date": "2026-10-23",
-      "change_pct": 1.42,
-      "history": [
-        -0.551,
-        -0.549,
-        -0.545,
-        -0.537,
-        -0.528,
-        -0.518,
-        -0.508,
-        -0.501,
-        -0.494,
-        -0.487
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "STLFSI4": {
       "id": "STLFSI4",
       "label": "St. Louis Fed Stress Index",
-      "value": -0.5837,
-      "date": "2026-10-23",
-      "change_pct": 7.85,
-      "history": [
-        -0.8087,
-        -0.849,
-        -0.7897,
-        -0.8482,
-        -0.7005,
-        -0.8066,
-        -0.4629,
-        -0.7203,
-        -0.6334,
-        -0.5837
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     },
     "WALCL": {
       "id": "WALCL",
       "label": "Bilans Fed (płynność)",
-      "value": 6745635.0,
-      "date": "2026-10-28",
-      "change_pct": -0.12,
-      "history": [
-        6730912.0,
-        6737204.0,
-        6740619.0,
-        6746548.0,
-        6747704.0,
-        6743031.0,
-        6747560.0,
-        6755639.0,
-        6753604.0,
-        6745635.0
-      ]
+      "value": null,
+      "date": null,
+      "change_pct": null
     }
   },
   "markets": {
