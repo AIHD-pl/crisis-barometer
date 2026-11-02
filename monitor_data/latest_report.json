@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-01T22:30:31.381485Z",
+  "timestamp": "2026-11-02T01:57:03.361443Z",
   "barometer": {
     "score": 13.8,
     "level": "spokojnie",
@@ -134,8 +134,19 @@
       "label": "Stopa Fed Funds",
       "value": 3.88,
       "date": "2026-10-29",
-      "change_pct": null,
-      "history": []
+      "change_pct": 0.0,
+      "history": [
+        3.88,
+        3.88,
+        3.88,
+        3.88,
+        3.88,
+        3.88,
+        3.88,
+        3.88,
+        3.88,
+        3.88
+      ]
     },
     "DTWEXBGS": {
       "id": "DTWEXBGS",
