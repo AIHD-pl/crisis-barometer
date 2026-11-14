@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-13T23:59:12.679105Z",
+  "timestamp": "2026-11-14T04:55:17.565355Z",
   "barometer": {
     "score": 12.6,
     "level": "spokojnie",
@@ -233,7 +233,7 @@
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 52347.55,
+      "price": 52347.6,
       "change_1d_pct": 0.1,
       "change_5d_pct": 2.07
     },
