@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-15T08:32:52.003977Z",
+  "timestamp": "2026-11-15T15:56:47.992283Z",
   "barometer": {
     "score": 12.6,
     "level": "spokojnie",
@@ -288,7 +288,7 @@
   },
   "news": {
     "hits": [],
-    "scanned_titles": 14,
+    "scanned_titles": 25,
     "hit_count": 0
   },
   "sec": {
