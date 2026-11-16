@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-16T07:25:53.298134Z",
+  "timestamp": "2026-11-16T17:36:45.775077Z",
   "barometer": {
-    "score": 12.6,
+    "score": 13.8,
     "level": "spokojnie",
     "level_label": "🟢 Spokojnie",
     "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
@@ -28,7 +28,7 @@
       },
       {
         "name": "Rynki akcji / sektory",
-        "score": 0,
+        "score": 8.0,
         "weight": 0.15
       },
       {
@@ -43,10 +43,11 @@
       }
     ],
     "reasons": [
-      "VIX 18.7 – normalnie",
+      "VIX 19.3 – normalnie",
       "Krzywa +0.27 – płaska",
-      "HY spread 3.20% – spokojny kredyt",
+      "HY spread 3.23% – spokojny kredyt",
       "NFCI -0.46 – luźne warunki",
+      "S&P 500 -1.4% dziennie",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
@@ -55,11 +56,10 @@
     "VIXCLS": {
       "id": "VIXCLS",
       "label": "VIX (strach na giełdzie)",
-      "value": 18.7,
-      "date": "2026-11-12",
-      "change_pct": 6.92,
+      "value": 19.3,
+      "date": "2026-11-13",
+      "change_pct": 3.21,
       "history": [
-        19.42,
         21.15,
         20.83,
         16.61,
@@ -68,7 +68,8 @@
         19.92,
         19.46,
         17.49,
-        18.7
+        18.7,
+        19.3
       ]
     },
     "T10Y2Y": {
@@ -112,12 +113,10 @@
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 3.2,
-      "date": "2026-11-12",
-      "change_pct": -3.03,
+      "value": 3.23,
+      "date": "2026-11-13",
+      "change_pct": 0.94,
       "history": [
-        3.26,
-        3.44,
         3.43,
         3.4,
         3.32,
@@ -125,7 +124,9 @@
         3.42,
         3.34,
         3.3,
-        3.2
+        3.3,
+        3.2,
+        3.23
       ]
     },
     "DFF": {
@@ -227,63 +228,63 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7561.67,
-      "change_1d_pct": -0.4,
-      "change_5d_pct": 2.51
+      "price": 7453.79,
+      "change_1d_pct": -1.43,
+      "change_5d_pct": -1.27
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 52347.55,
-      "change_1d_pct": 0.1,
-      "change_5d_pct": 2.07
+      "price": 51887.02,
+      "change_1d_pct": -0.88,
+      "change_5d_pct": -0.96
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 25136.27,
-      "change_1d_pct": -0.91,
-      "change_5d_pct": 2.27
+      "price": 24634.92,
+      "change_1d_pct": -1.99,
+      "change_5d_pct": -2.45
     },
     "^VIX": {
       "label": "VIX",
-      "price": 19.3,
-      "change_1d_pct": 3.21,
-      "change_5d_pct": -24.73
+      "price": 21.41,
+      "change_1d_pct": 10.93,
+      "change_5d_pct": 7.48
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 76.94,
-      "change_1d_pct": -0.05,
-      "change_5d_pct": -0.38
+      "price": 76.81,
+      "change_1d_pct": -0.18,
+      "change_5d_pct": -0.91
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 102.81,
-      "change_1d_pct": -0.23,
-      "change_5d_pct": -1.65
+      "price": 102.85,
+      "change_1d_pct": 0.04,
+      "change_5d_pct": -1.74
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 79.38,
-      "change_1d_pct": -0.43,
-      "change_5d_pct": -3.1
+      "price": 79.34,
+      "change_1d_pct": -0.05,
+      "change_5d_pct": -3.2
     },
     "GLD": {
       "label": "Złoto",
-      "price": 355.45,
-      "change_1d_pct": 0.16,
-      "change_5d_pct": -4.58
+      "price": 354.39,
+      "change_1d_pct": -0.3,
+      "change_5d_pct": -6.62
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 29.5,
-      "change_1d_pct": 0.27,
-      "change_5d_pct": 1.27
+      "price": 29.52,
+      "change_1d_pct": 0.08,
+      "change_5d_pct": 1.92
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 58.68,
-      "change_1d_pct": 0.81,
-      "change_5d_pct": 2.66
+      "price": 58.4,
+      "change_1d_pct": -0.49,
+      "change_5d_pct": 0.7
     }
   },
   "news": {
@@ -293,7 +294,7 @@
   },
   "sec": {
     "hits": [],
-    "hit_count": 0
+    "error": "HTTPSConnectionPool(host='www.sec.gov', port=443): Read timed out. (read timeout=25)"
   },
   "meta": {
     "fred_key_present": true,
