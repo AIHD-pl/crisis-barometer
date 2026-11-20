@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-19T23:58:31.305733Z",
+  "timestamp": "2026-11-20T05:31:42.560938Z",
   "barometer": {
     "score": 23.8,
     "level": "spokojnie",
@@ -51,7 +51,7 @@
       "S&P 500 -5.5% w 5 dni",
       "Sektor finansowy słaby (-4.5% / 5d)",
       "Trafienia w newsach o stresie: 1",
-      "News: We&#x2019;re in our 50s and terrified of a market crash. Should we put $400,000 ",
+      "News: I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million r",
       "Brak stresujących 8-K w próbce"
     ]
   },
@@ -293,7 +293,7 @@
   "news": {
     "hits": [
       {
-        "title": "We&#x2019;re in our 50s and terrified of a market crash. Should we put $400,000 of our $1 million retirement savings into an annuity?",
+        "title": "I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
         "keyword": "market crash",
         "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
       }
