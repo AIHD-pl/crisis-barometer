@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-11-20T14:30:18.111657Z",
+  "timestamp": "2026-11-20T22:02:10.163016Z",
   "barometer": {
-    "score": 25.0,
+    "score": 30.2,
     "level": "uwaga",
     "level_label": "🟡 Podwyższona uwaga",
     "description": "Widać pierwsze oznaki napięcia. Warto obserwować kolejne odczyty.",
     "components": [
       {
         "name": "VIX / strach",
-        "score": 40,
+        "score": 60,
         "weight": 0.2
       },
       {
@@ -28,7 +28,7 @@
       },
       {
         "name": "Rynki akcji / sektory",
-        "score": 32.0,
+        "score": 40,
         "weight": 0.15
       },
       {
@@ -43,12 +43,14 @@
       }
     ],
     "reasons": [
-      "VIX 24.6 – podwyższony niepokój",
+      "VIX 28.4 – wysoki stres",
       "Krzywa +0.28 – płaska",
       "HY spread 3.52% – lekko podwyższony",
       "NFCI -0.48 – luźne warunki",
-      "S&P 500 -5.5% w 5 dni",
-      "Sektor finansowy słaby (-5.1% / 5d)",
+      "S&P 500 spadł o -3.7% dziennie",
+      "S&P 500 -8.6% w 5 dni",
+      "Sektor finansowy słaby (-7.0% / 5d)",
+      "High-yield słabszy od kredytu inwestycyjnego",
       "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
@@ -57,11 +59,10 @@
     "VIXCLS": {
       "id": "VIXCLS",
       "label": "VIX (strach na giełdzie)",
-      "value": 24.56,
-      "date": "2026-11-18",
-      "change_pct": -3.53,
+      "value": 28.44,
+      "date": "2026-11-19",
+      "change_pct": 15.8,
       "history": [
-        28.18,
         25.64,
         19.92,
         19.46,
@@ -70,7 +71,8 @@
         19.3,
         22.91,
         25.46,
-        24.56
+        24.56,
+        28.44
       ]
     },
     "T10Y2Y": {
@@ -134,7 +136,7 @@
       "id": "DFF",
       "label": "Stopa Fed Funds",
       "value": 3.88,
-      "date": "2026-11-18",
+      "date": "2026-11-19",
       "change_pct": 0.0,
       "history": [
         3.88,
@@ -229,63 +231,63 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7145.32,
-      "change_1d_pct": -0.43,
-      "change_5d_pct": -5.51
+      "price": 6910.39,
+      "change_1d_pct": -3.7,
+      "change_5d_pct": -8.61
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 49071.92,
-      "change_1d_pct": -0.05,
-      "change_5d_pct": -6.26
+      "price": 48147.33,
+      "change_1d_pct": -1.93,
+      "change_5d_pct": -8.02
     },
     "^IXIC": {
       "label": "Nasdaq",
-      "price": 23879.2,
-      "change_1d_pct": -2.25,
-      "change_5d_pct": -5.86
+      "price": 22617.73,
+      "change_1d_pct": -5.28,
+      "change_5d_pct": -10.02
     },
     "^VIX": {
       "label": "VIX",
-      "price": 29.71,
-      "change_1d_pct": 4.47,
-      "change_5d_pct": 53.94
+      "price": 35.89,
+      "change_1d_pct": 26.2,
+      "change_5d_pct": 85.96
     },
     "HYG": {
       "label": "ETF high-yield",
-      "price": 76.53,
-      "change_1d_pct": -0.16,
-      "change_5d_pct": -0.58
+      "price": 76.33,
+      "change_1d_pct": -0.26,
+      "change_5d_pct": -0.79
     },
     "LQD": {
       "label": "ETF corporate IG",
-      "price": 103.08,
-      "change_1d_pct": -0.07,
-      "change_5d_pct": 0.03
+      "price": 103.69,
+      "change_1d_pct": 0.59,
+      "change_5d_pct": 0.86
     },
     "TLT": {
       "label": "ETF długich obligacji",
-      "price": 80.35,
-      "change_1d_pct": 0.16,
-      "change_5d_pct": 0.79
+      "price": 81.45,
+      "change_1d_pct": 1.37,
+      "change_5d_pct": 2.61
     },
     "GLD": {
       "label": "Złoto",
-      "price": 327.0,
-      "change_1d_pct": -2.44,
-      "change_5d_pct": -8.0
+      "price": 322.87,
+      "change_1d_pct": -3.67,
+      "change_5d_pct": -9.17
     },
     "UUP": {
       "label": "Dolar ETF",
-      "price": 29.63,
-      "change_1d_pct": 0.03,
-      "change_5d_pct": 0.71
+      "price": 29.62,
+      "change_1d_pct": -0.03,
+      "change_5d_pct": 0.41
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.69,
-      "change_1d_pct": 0.21,
-      "change_5d_pct": -5.09
+      "price": 54.57,
+      "change_1d_pct": -1.82,
+      "change_5d_pct": -7.0
     }
   },
   "news": {
