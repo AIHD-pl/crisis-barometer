@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-11-20T05:31:42.560938Z",
+  "timestamp": "2026-11-20T14:30:18.111657Z",
   "barometer": {
-    "score": 23.8,
-    "level": "spokojnie",
-    "level_label": "🟢 Spokojnie",
-    "description": "Warunki finansowe wyglądają stabilnie. Brak silnych sygnałów ostrzegawczych.",
+    "score": 25.0,
+    "level": "uwaga",
+    "level_label": "🟡 Podwyższona uwaga",
+    "description": "Widać pierwsze oznaki napięcia. Warto obserwować kolejne odczyty.",
     "components": [
       {
         "name": "VIX / strach",
@@ -18,7 +18,7 @@
       },
       {
         "name": "Spready kredytowe HY",
-        "score": 15,
+        "score": 35,
         "weight": 0.18
       },
       {
@@ -28,12 +28,12 @@
       },
       {
         "name": "Rynki akcji / sektory",
-        "score": 40,
+        "score": 32.0,
         "weight": 0.15
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 15.0,
+        "score": 0,
         "weight": 0.08
       },
       {
@@ -45,13 +45,11 @@
     "reasons": [
       "VIX 24.6 – podwyższony niepokój",
       "Krzywa +0.28 – płaska",
-      "HY spread 3.47% – spokojny kredyt",
+      "HY spread 3.52% – lekko podwyższony",
       "NFCI -0.48 – luźne warunki",
-      "S&P 500 spadł o -2.0% dziennie",
       "S&P 500 -5.5% w 5 dni",
-      "Sektor finansowy słaby (-4.5% / 5d)",
-      "Trafienia w newsach o stresie: 1",
-      "News: I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million r",
+      "Sektor finansowy słaby (-5.1% / 5d)",
+      "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
   },
@@ -116,11 +114,10 @@
     "BAMLH0A0HYM2": {
       "id": "BAMLH0A0HYM2",
       "label": "Spready high-yield (kredyt śmieciowy)",
-      "value": 3.47,
-      "date": "2026-11-18",
-      "change_pct": 1.17,
+      "value": 3.52,
+      "date": "2026-11-19",
+      "change_pct": 1.44,
       "history": [
-        3.48,
         3.42,
         3.34,
         3.3,
@@ -129,7 +126,8 @@
         3.23,
         3.34,
         3.43,
-        3.47
+        3.47,
+        3.52
       ]
     },
     "DFF": {
@@ -231,15 +229,15 @@
   "markets": {
     "^GSPC": {
       "label": "S&P 500",
-      "price": 7175.83,
-      "change_1d_pct": -2.02,
-      "change_5d_pct": -5.49
+      "price": 7145.32,
+      "change_1d_pct": -0.43,
+      "change_5d_pct": -5.51
     },
     "^DJI": {
       "label": "Dow Jones",
-      "price": 49097.06,
-      "change_1d_pct": -2.19,
-      "change_5d_pct": -6.12
+      "price": 49071.92,
+      "change_1d_pct": -0.05,
+      "change_5d_pct": -6.26
     },
     "^IXIC": {
       "label": "Nasdaq",
@@ -249,9 +247,9 @@
     },
     "^VIX": {
       "label": "VIX",
-      "price": 28.44,
-      "change_1d_pct": 15.8,
-      "change_5d_pct": 52.09
+      "price": 29.71,
+      "change_1d_pct": 4.47,
+      "change_5d_pct": 53.94
     },
     "HYG": {
       "label": "ETF high-yield",
@@ -273,9 +271,9 @@
     },
     "GLD": {
       "label": "Złoto",
-      "price": 335.18,
-      "change_1d_pct": -1.76,
-      "change_5d_pct": -5.55
+      "price": 327.0,
+      "change_1d_pct": -2.44,
+      "change_5d_pct": -8.0
     },
     "UUP": {
       "label": "Dolar ETF",
@@ -285,21 +283,15 @@
     },
     "XLF": {
       "label": "Sektor finansowy",
-      "price": 55.58,
-      "change_1d_pct": -1.49,
-      "change_5d_pct": -4.52
+      "price": 55.69,
+      "change_1d_pct": 0.21,
+      "change_5d_pct": -5.09
     }
   },
   "news": {
-    "hits": [
-      {
-        "title": "I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
-        "keyword": "market crash",
-        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
-      }
-    ],
+    "hits": [],
     "scanned_titles": 25,
-    "hit_count": 1
+    "hit_count": 0
   },
   "sec": {
     "hits": [],
