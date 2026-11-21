@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-21T11:52:44.494493Z",
+  "timestamp": "2026-11-21T18:22:19.096881Z",
   "barometer": {
-    "score": 30.2,
+    "score": 31.4,
     "level": "uwaga",
     "level_label": "🟡 Podwyższona uwaga",
     "description": "Widać pierwsze oznaki napięcia. Warto obserwować kolejne odczyty.",
@@ -33,7 +33,7 @@
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 0,
+        "score": 15.0,
         "weight": 0.08
       },
       {
@@ -51,7 +51,8 @@
       "S&P 500 -8.6% w 5 dni",
       "Sektor finansowy słaby (-7.0% / 5d)",
       "High-yield słabszy od kredytu inwestycyjnego",
-      "Brak alarmujących nagłówków",
+      "Trafienia w newsach o stresie: 1",
+      "News: I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million r",
       "Brak stresujących 8-K w próbce"
     ]
   },
@@ -291,9 +292,15 @@
     }
   },
   "news": {
-    "hits": [],
-    "scanned_titles": 25,
-    "hit_count": 0
+    "hits": [
+      {
+        "title": "I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
+        "keyword": "market crash",
+        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
+      }
+    ],
+    "scanned_titles": 11,
+    "hit_count": 1
   },
   "sec": {
     "hits": [],
