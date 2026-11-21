@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-20T22:02:10.163016Z",
+  "timestamp": "2026-11-21T03:36:47.919775Z",
   "barometer": {
     "score": 30.2,
     "level": "uwaga",
@@ -44,7 +44,7 @@
     ],
     "reasons": [
       "VIX 28.4 – wysoki stres",
-      "Krzywa +0.28 – płaska",
+      "Krzywa +0.29 – płaska",
       "HY spread 3.52% – lekko podwyższony",
       "NFCI -0.48 – luźne warunki",
       "S&P 500 spadł o -3.7% dziennie",
@@ -78,11 +78,10 @@
     "T10Y2Y": {
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
-      "value": 0.28,
-      "date": "2026-11-19",
-      "change_pct": 3.7,
+      "value": 0.29,
+      "date": "2026-11-20",
+      "change_pct": 3.57,
       "history": [
-        0.38,
         0.35,
         0.32,
         0.25,
@@ -91,17 +90,17 @@
         0.29,
         0.3,
         0.27,
-        0.28
+        0.28,
+        0.29
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.7,
-      "date": "2026-11-19",
-      "change_pct": -4.11,
+      "value": 0.6,
+      "date": "2026-11-20",
+      "change_pct": -14.29,
       "history": [
-        0.67,
         0.67,
         0.64,
         0.68,
@@ -110,7 +109,8 @@
         0.78,
         0.77,
         0.73,
-        0.7
+        0.7,
+        0.6
       ]
     },
     "BAMLH0A0HYM2": {
