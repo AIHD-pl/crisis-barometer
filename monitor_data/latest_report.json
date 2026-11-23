@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-11-23T01:12:38.826144Z",
+  "timestamp": "2026-11-23T09:55:51.755873Z",
   "barometer": {
-    "score": 31.4,
+    "score": 30.2,
     "level": "uwaga",
     "level_label": "🟡 Podwyższona uwaga",
     "description": "Widać pierwsze oznaki napięcia. Warto obserwować kolejne odczyty.",
@@ -33,7 +33,7 @@
       },
       {
         "name": "Newsy / nagłówki",
-        "score": 15.0,
+        "score": 0,
         "weight": 0.08
       },
       {
@@ -51,8 +51,7 @@
       "S&P 500 -8.6% w 5 dni",
       "Sektor finansowy słaby (-7.0% / 5d)",
       "High-yield słabszy od kredytu inwestycyjnego",
-      "Trafienia w newsach o stresie: 1",
-      "News: I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million r",
+      "Brak alarmujących nagłówków",
       "Brak stresujących 8-K w próbce"
     ]
   },
@@ -250,9 +249,9 @@
     },
     "^VIX": {
       "label": "VIX",
-      "price": 35.89,
-      "change_1d_pct": 26.2,
-      "change_5d_pct": 85.96
+      "price": 30.46,
+      "change_1d_pct": -15.13,
+      "change_5d_pct": 32.96
     },
     "HYG": {
       "label": "ETF high-yield",
@@ -292,15 +291,9 @@
     }
   },
   "news": {
-    "hits": [
-      {
-        "title": "I&#x2019;m terrified of a market crash. Should I put $400,000 of my $1 million retirement savings into an annuity?",
-        "keyword": "market crash",
-        "source": "https://feeds.marketwatch.com/marketwatch/topstories/"
-      }
-    ],
+    "hits": [],
     "scanned_titles": 25,
-    "hit_count": 1
+    "hit_count": 0
   },
   "sec": {
     "hits": [],
