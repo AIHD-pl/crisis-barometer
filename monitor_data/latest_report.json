@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-23T21:48:28.077389Z",
+  "timestamp": "2026-11-24T05:39:23.980451Z",
   "barometer": {
     "score": 30.0,
     "level": "uwaga",
@@ -76,10 +76,9 @@
       "id": "T10Y2Y",
       "label": "Krzywa 10y-2y (odwrócenie = ostrzeżenie)",
       "value": 0.29,
-      "date": "2026-11-20",
-      "change_pct": 3.57,
+      "date": "2026-11-23",
+      "change_pct": 0.0,
       "history": [
-        0.35,
         0.32,
         0.25,
         0.24,
@@ -88,17 +87,17 @@
         0.3,
         0.27,
         0.28,
+        0.29,
         0.29
       ]
     },
     "T10Y3M": {
       "id": "T10Y3M",
       "label": "Krzywa 10y-3m",
-      "value": 0.6,
-      "date": "2026-11-20",
-      "change_pct": -14.29,
+      "value": 0.55,
+      "date": "2026-11-23",
+      "change_pct": -8.33,
       "history": [
-        0.67,
         0.64,
         0.68,
         0.78,
@@ -107,7 +106,8 @@
         0.77,
         0.73,
         0.7,
-        0.6
+        0.6,
+        0.55
       ]
     },
     "BAMLH0A0HYM2": {
@@ -289,7 +289,7 @@
   },
   "news": {
     "hits": [],
-    "scanned_titles": 14,
+    "scanned_titles": 25,
     "hit_count": 0
   },
   "sec": {
